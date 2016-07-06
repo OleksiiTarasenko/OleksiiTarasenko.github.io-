@@ -48,7 +48,7 @@ ul{
     list-style: none;
 }
 .menu li {
-    border-bottom: 1px solid #c8c8c8;
+    border-bottom: 1px solid  #c8c8c8;
     color: black;
     display: block;
     height: 35px;
@@ -63,11 +63,14 @@ ul{
     display: block;
     padding-left: 24px;
     text-decoration: none;
+    height: 35px;
+    line-height: 35px
 }
 .menu a:hover {
     background: #f9f9f9;
     font-weight: bold;
     padding-left: 50px;
+   
 }
 .content {
     background-color: #ffffff;
