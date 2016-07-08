@@ -124,8 +124,6 @@ h3 {
     width: 150px;
 }
 .dropdown ul ul li:first-child {
-    border-left: solid 1px;
-    border-right: solid 1px;
     margin-left: 0;
 }
 .dropdown ul li:last-child {
