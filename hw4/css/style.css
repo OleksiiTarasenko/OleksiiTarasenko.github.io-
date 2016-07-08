@@ -107,8 +107,8 @@ h3 {
     top: 100%;
 }
 .dropdown ul li:hover > ul {
-    -webkit-box-shadow: -22px 15px 5px 0px rgba(0, 0, 0, 0.75);
     display: inherit;
+    -webkit-box-shadow: -22px 15px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -22px 15px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: -22px 15px 5px 0px rgba(0, 0, 0, 0.75);
 }
@@ -116,7 +116,7 @@ h3 {
     background-color: #303030;
    display: list-item;
     position: relative;
-    right: 22px;
+    right: 20px;
     width: 150px;
 }
 .dropdown ul ul li:first-child {
