@@ -173,7 +173,7 @@ text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 .subtitle--third {
 	padding-left: 20px;
 }
-.subtitle--first::before {
+.subtitle--first:before {
 	display: block;
 	background: url(../img/sprites.png) no-repeat;
 	width:25px;
@@ -183,7 +183,7 @@ text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
    	float: left;
     
 }
-.subtitle--second::before {
+.subtitle--second:before {
 	display: block;
 	background: url(../img/sprites.png) no-repeat;
 	background-position: -26px 0;
@@ -193,7 +193,7 @@ text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 	height: 25px;
 	margin: 10px 18px 0 0;
 }
-.subtitle--third::before {
+.subtitle--third:before {
 	display: block;
 	background:url(../img/sprites.png) no-repeat;
 	background-position: -56px 0;
@@ -321,7 +321,7 @@ text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 .post__under--year {
 	display: inline;
 }
-.post__item--upper::after, .post__item--middle::after, .post__item--bottom::after {
+.post__item--upper:after, .post__item--middle:after, .post__item--bottom:after {
 	content: " feugiat ege";
 }
 .nav__link--updates {
@@ -342,16 +342,16 @@ text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 	font-family:'Open Sans light', Arial, sans-serif;
 	letter-spacing: .01em;
 }
-.post__under--upper::after {
+.post__under--upper:after {
 	content:"in Recent News";
 }
-.post__under--middle::after {
+.post__under--middle:after {
 	content:"in Category";
 }
-.post__under--bottom::after {
+.post__under--bottom:after {
 	content:"in Blog Updates";
 }
-.post__item--upper::before, .post__item--middle::before, .post__item--bottom::before {
+.post__item--upper:before, .post__item--middle:before, .post__item--bottom:before {
 	display: block;
 	background: url(../img/posts.png) no-repeat;
 	width:48px;
@@ -362,16 +362,16 @@ text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
    	margin-left: 35px;
 }
 
-.post__item--upper::before {
+.post__item--upper:before {
 	background: url(../img/posts.png) no-repeat;
 }
 
-.post__item--middle::before {
+.post__item--middle:before {
 	background-position: 0 -68px;
 }
     
 
-.post__item--bottom::before {
+.post__item--bottom:before {
 	background-position: 0 -132px;
 }
 
@@ -406,7 +406,7 @@ text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 	font-size: 30px;
 	line-height: 30px;
 }
-.section__subtitle--aside::before {
+.section__subtitle--aside:before {
 	display: block;
 	background:url(../img/author.png) no-repeat;
 	width:54px;
@@ -418,7 +418,7 @@ text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 	left:-5px;
 	
 }
-.section__subtitle--aside::after {
+.section__subtitle--aside:after {
 	content:" starts here";
 	color:#edbfff;
 }
@@ -468,7 +468,7 @@ margin-left: 90px;
 	padding: 90px 0 0 0;
 	color:#454545;
 }
-.news__subtitle::after {
+.news__subtitle:after {
 	content:"er";
 	color:#b9b9b9;
 }
@@ -528,12 +528,12 @@ margin-left: 90px;
 	font-family: 'Open Sans ExtraBold', Arial, sans-serif;
 	font-weight: 900;
 }
-.signature::before {
+.signature:before {
 	content: "Designed by ";
 	font-family: 'Open Sans light', Arial, sans-serif;
 	font-weight: 300;
 }
-@media (min-width: 768px) and (max-width:959px) {
+@media screen and (min-width: 768px) and (max-width:959px) {
 	.container {
 	margin: 0 20px;
 	}
@@ -643,7 +643,7 @@ margin-left: 90px;
 	top: -6px;
 	left:4px;
 }
-.subtitle--first::before, .subtitle--second::before,.subtitle--third::before {
+.subtitle--first:before, .subtitle--second:before,.subtitle--third:before {
 	display: block;
 	background: url(../img/sprites.png) no-repeat;
 	width:25px;
@@ -652,19 +652,19 @@ margin-left: 90px;
     content: "";
    	float: left;
     }
-    .subtitle--first::before {
+    .subtitle--first:before {
 	
     position: relative;
    	right: 10px;
     top: -3px;
 	}
-	.subtitle--second::before {
+	.subtitle--second:before {
 	margin: 5px 1px 0 0;
 	width:25px;
     position: relative;
    	right: 20px;
 	}
-	.subtitle--third::before {
+	.subtitle--third:before {
 	margin: 5px 1px 0 0;
     position: relative;
    	right: 25px;
@@ -701,14 +701,14 @@ margin-left: 90px;
 	font-size: 1.5em;
 	line-height: 1.5em;
 }
-.section__subtitle--aside::before {
+.section__subtitle--aside:before {
 	
 	top:-1px;
 	left:-11px;
 	
 }
 	
-    .section__subtitle--aside::after {
+    .section__subtitle--aside:after {
 	position: relative;
 	left:-82px;
 	top: 25px;
@@ -785,25 +785,25 @@ margin-left: 90px;
 	top: -32px;
 	left: -28px;
 }
-	.post__item--upper::before, .post__item--middle::before, .post__item--bottom::before {
+	.post__item--upper:before, .post__item--middle:before, .post__item--bottom:before {
 	margin-right: 12px;
    	margin-left: 35px;
 }
 
-.post__item--upper::before {
+.post__item--upper:before {
 	position: relative;
 	left:-3px;
 	top:-1px;
 }
 
-.post__item--middle::before {
+.post__item--middle:before {
 	position: relative;
 	left:-5px;
 	top:-1px;
 }
     
 
-.post__item--bottom::before {
+.post__item--bottom:before {
 	position: relative;
 	left:-3px;
 	top:-1px;
@@ -833,9 +833,9 @@ position: static;
 	top:-25px;
 	left: -28px;
 }
-.post__under--upper::after,
-.post__under--middle::after,
-.post__under--bottom::after {
+.post__under--upper:after,
+.post__under--middle:after,
+.post__under--bottom:after {
 	display: none;
 }
 .post__under--year {
@@ -978,7 +978,7 @@ position: static;
 		margin-left:0px;
 	}
 
-.signature::before {
+.signature:before {
 	content: "Designed by ";
 	font-family: 'Open Sans light', Arial, sans-serif;
 	font-weight: 300;
@@ -1020,7 +1020,7 @@ and (max-width : 767px)  {
 	top:-3px;
 	left: 16px;
 	}
-	.section__subtitle--aside::after {
+	.section__subtitle--aside:after {
 		position: static;
 	}
 	.l-nav {
@@ -1106,7 +1106,7 @@ and (max-width : 767px)  {
 line-height: 48px;
 height: 48px;
 	}
-	.nav__item:first-of-type .nav__link--header::after {
+	.nav__item:first-of-type .nav__link--header:after {
 		content:"";
       display: block;
       height: 3px;
@@ -1196,7 +1196,7 @@ height: 48px;
 	top: 36px;
 	left:5px;
 }
-.subtitle--first::before, .subtitle--second::before,.subtitle--third::before {
+.subtitle--first:before, .subtitle--second:before,.subtitle--third:before {
 	display: block;
 	background: url(../img/sprites.png) no-repeat;
 	width:25px;
@@ -1205,21 +1205,21 @@ height: 48px;
     content: "";
    	float: left;
     }
-    .subtitle--first::before {
+    .subtitle--first:before {
 	margin: 0px 25px 0 0;
 	position:relative;
 	top:2px;
 	left:3px;
     
 }
-.subtitle--second::before {
+.subtitle--second:before {
 	
 	margin: 0px 18px 0 0;
 	position:relative;
 	left:-3px;
 	top:3px;
 }
-.subtitle--third::before {
+.subtitle--third:before {
 	position:relative;
 	left:-3px;
 	top: 12px;
@@ -1286,7 +1286,7 @@ height: 48px;
 	font-size: 30px;
 	line-height: 30px;
 }
-.section__subtitle--aside::before {
+.section__subtitle--aside:before {
 	
 	position:relative;
 	top:-5px;
@@ -1344,25 +1344,25 @@ height: 48px;
 	position: relative;
 	top: 3px;
 }
-	.post__item--upper::before, .post__item--middle::before, .post__item--bottom::before {
+	.post__item--upper:before, .post__item--middle:before, .post__item--bottom:before {
 	margin-right: 12px;
    	margin-left: 35px;
 }
 
-.post__item--upper::before {
+.post__item--upper:before {
 	position: relative;
 	left:-3px;
 	top:-1px;
 }
 
-.post__item--middle::before {
+.post__item--middle:before {
 	position: relative;
 	left:-5px;
 	top:-1px;
 }
     
 
-.post__item--bottom::before {
+.post__item--bottom:before {
 	position: relative;
 	left:-3px;
 	top:-1px;
@@ -1386,9 +1386,9 @@ position: static;
 	position: relative;
 	top: 10px;
 }
-.post__under--upper::after ,
-.post__under--middle::after,
-.post__under--bottom::after {
+.post__under--upper:after ,
+.post__under--middle:after,
+.post__under--bottom:after {
 	display: none;
 }
 	.updates__more {
@@ -1672,7 +1672,7 @@ position: static;
 line-height: 48px;
 height: 48px;
 	}
-	.nav__item:first-of-type .nav__link--header::after {
+	.nav__item:first-of-type .nav__link--header:after {
 		content:"";
       display: block;
       height: 3px;
@@ -1768,7 +1768,7 @@ height: 48px;
 
 		font-size: 1.5em;
 	}
-	.subtitle--first::before, .subtitle--second::before,.subtitle--third::before {
+	.subtitle--first:before, .subtitle--second:before,.subtitle--third:before {
 	display: block;
 	background: url(../img/sprites.png) no-repeat;
 	width:25px;
@@ -1780,7 +1780,7 @@ height: 48px;
 	.subtitle--first {
 		padding: 70px 0 0 30px;
 	}
-	.subtitle--first::before {
+	.subtitle--first:before {
 	margin: 5px 1px 0 0;
     position: relative;
    	right: 12px;
@@ -1789,7 +1789,7 @@ height: 48px;
 	.subtitle--second {
 	padding: 35px 0 0 30px;
 	}
-	.subtitle--second::before {
+	.subtitle--second:before {
 	margin: 5px 1px 0 0;
 	width:25px;
     position: relative;
@@ -1799,7 +1799,7 @@ height: 48px;
 	padding: 55px 0 0 30px;
 	}
 	
-	.subtitle--third::before {
+	.subtitle--third:before {
 	margin: 5px 1px 0 0;
     position: relative;
    	right: 25px;
@@ -1829,7 +1829,7 @@ height: 48px;
 	font-size: 1.5em;
 	line-height: 1.4em;
 	}
-	.section__subtitle--aside::before {
+	.section__subtitle--aside:before {
 	
 	position:relative;
 	top: 1px;
@@ -1889,15 +1889,15 @@ height: 48px;
 	.post__under--bottom {
 		line-height: 1.5em;
 	}
-	.post__under--upper::after, 
-	.post__under--middle::after,
-	.post__under--bottom::after {
+	.post__under--upper:after, 
+	.post__under--middle:after,
+	.post__under--bottom:after {
 		display: none;
 	}
 	.post__under--year {
 		display: none;
 	}
-	.post__item--upper::before, .post__item--middle::before, .post__item--bottom::before {
+	.post__item--upper:before, .post__item--middle:before, .post__item--bottom:before {
 	display: block;
 	background: url(../img/posts.png) no-repeat;
 	width:48px;
@@ -1907,17 +1907,17 @@ height: 48px;
    	margin-right: 25px;
    	margin-left: 35px;
 	}
-	.post__item--upper::after, .post__item--middle::after, .post__item--bottom::after {
+	.post__item--upper:after, .post__item--middle:after, .post__item--bottom:after {
 	display: none;
 	}
-	.post__item--upper::before {
+	.post__item--upper:before {
 	background: url(../img/posts.png) no-repeat;
 	position: relative;
 	top:-1px;
 	left: 7px;
 	}
 
-	.post__item--middle::before {
+	.post__item--middle:before {
 	background-position: 0 -68px;
 	position: relative;
 	top:1px;
@@ -1925,7 +1925,7 @@ height: 48px;
 	}
     
 
-	.post__item--bottom::before {
+	.post__item--bottom:before {
 	background-position: 0 -132px;
 	position: relative;
 	top:3px;
