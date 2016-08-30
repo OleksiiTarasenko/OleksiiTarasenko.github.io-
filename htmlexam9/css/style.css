@@ -144,9 +144,9 @@ filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=4, OffY=4, Color=##969
 .slider {
 	margin-top: 168px;
 	height: 400px;
-	background: black;
-	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);		
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+	
+	/*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);		
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";*/
 	background: rgba(0,0,0,0.3);
 }
 
@@ -204,7 +204,7 @@ filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=4, OffY=4, Color=##969
 	background-image: -moz-linear-gradient(bottom, #33253a, #745083);
 	background-image: -webkit-linear-gradient(bottom, #33253a, #745083);
     background-image: -o-linear-gradient(bottom, #33253a, #745083);
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#fff',GradientType=0 ); 
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#33253a',GradientType=0 ); 
    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#745083', endColorstr='#33253a' )";    
     
 	background-image: linear-gradient(to top, #33253a, #745083);
