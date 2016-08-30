@@ -11,3 +11,6 @@
 	padding-bottom: 55px;
 	width:12%;
 }
+.slider__paragraph, .column__paragragh, .post__item, .post__under, .aside__paragraph, .news__copyright, ..news__item, .signature {
+	font-family: 'open sans';
+}
