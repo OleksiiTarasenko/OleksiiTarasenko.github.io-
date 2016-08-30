@@ -1,0 +1,13 @@
+.about {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#33253a',GradientType=0 );
+}
+.logos__list{
+	
+	margin-bottom: 40px;
+}
+.logos__item {
+	display: inline;
+	padding-top: 15px;
+	padding-bottom: 55px;
+	width:12%;
+}
