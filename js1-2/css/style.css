@@ -4,11 +4,11 @@
 	background: tomato;
 }
 ul {
-	margin: 250px;
+	margin: 80px;
 	list-style: none;
 }
 li {
-	margin: 30px auto;
+	margin: 200px auto;
 	font-size:3em;
 	text-transform: uppercase;
 	color: gold;

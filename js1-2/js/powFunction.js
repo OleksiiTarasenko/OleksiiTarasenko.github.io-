@@ -1,3 +1,4 @@
+
 // function pow
 function pow(a, b) {  
   var result = a;
@@ -33,7 +34,7 @@ var b = prompt ('Введите показатель степени', 1);
 
 
 //вывод на экран
-var pow= pow (a, b)	;	
+var pow = pow (a, b)	;	
  alert ( pow );
  //вывод в консоль
 console.log( a,' степени',b ) 
