@@ -1,18 +1,20 @@
 var array = new Array(5)
 for (var i = 0; i<=4 ; i++)
 	{
-    array[i]=prompt('Введите имя', '');
+	do {
+    array[i]=prompt('Введите имя '+(i+1), '');
+     } while (array[i]==false);
  	} 
  console.log('Список пользователей:', array);
 do {
  var name = prompt('Введите Ваше имя', '');
- if  	( name!=false )
- {
- 	break;
- }
- alert ( 'Повторите ввод!' );
+// if  	( name!=false )
+ //{
+ //	break;
+ //}
+ //alert ( 'Повторите ввод!' );
 }
-while (	true )
+while (	name==false );
 
  for (var i = 0; i<=4 ; i++)
 	{
