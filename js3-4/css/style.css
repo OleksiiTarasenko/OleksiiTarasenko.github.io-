@@ -1,0 +1,37 @@
+* {
+	font-family: Tahoma, Arial, sans-serif;
+}
+.h1 {
+	display: block;
+	width: 420px;
+	margin: 30px auto;
+	font-size: 2em;
+}
+ul {
+	list-style: none;
+}
+.list {
+	
+	font-size: 1.5em;
+	margin-left: 30px;
+	padding: 0;
+	
+}
+
+.listElement {
+	margin: 20px 0;
+	font-size: 1.25em;
+}
+.listQuestElement {
+	margin: 10px 0 0 50px;
+	
+}
+
+.button {
+	display: block;
+	padding: 30px 50px;
+	margin: 80px auto;
+	border: 1px solid black;
+	background: lightblue;
+	font-size: 2em;
+}
