@@ -1,0 +1,103 @@
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+     padding: 0;
+     position: relative;
+}
+.carousel-wrapper {
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+
+ 
+.carousel-item {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+ 
+.carousel-item img {
+    max-width: 100px;
+    max-height: 66px;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 2.5em;
+    color:white;
+    font-weight: 800;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 30px;
+}
+ 
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+#container {
+ width: 800px;
+    margin: 100px auto;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+body {
+  background:#e2ebeb;
+}
+h1 {
+    padding-top: 20px;
+    font-size: 1.75em;
+}
+h2 {
+    font-size: 1.25em;
+}
+.container {
+  -moz-box-shadow: 0px 2px 10px -3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 2px 10px -3px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 10px -3px rgba(0,0,0,0.75);
+  background: white;
+  margin: auto;
+  text-align: center;
+  width:600px;
+  
+  margin: 0 auto;
+}
+.container p, ul {
+  margin: 20px;
+  text-align: left;
+}
+.container li {
+  margin-left: 20px; 
+}
+.container:last-child {
+  padding-bottom: 30px;
+} 
+.mya {
+  display: block;
+  margin-left: 20px;
+  text-align: left;
+}
+.border {
+  border-bottom: 1px solid black;
+  margin: 0 10px;
+}
