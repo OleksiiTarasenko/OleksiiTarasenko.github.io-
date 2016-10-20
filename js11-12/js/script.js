@@ -5,7 +5,7 @@ $(function() {
       data = {
         title: 'Тарасенко Алексей Владимирович',
         link: [
-          'img/img0.png',
+          'img/img0.jpg',
           
           'https://www.facebook.com/profile.php?id=100003839317784',
         ],
