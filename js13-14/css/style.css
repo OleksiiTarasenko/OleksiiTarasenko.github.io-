@@ -1,0 +1,78 @@
+* {
+	font-family: Tahoma, Arial, sans-serif;
+}
+h1 {
+	display: block;
+	width: 420px;
+	margin: 30px auto;
+	font-size: 3em;
+}
+ul {
+	list-style: none;
+}
+.list {
+	
+	font-size: 1.5em;
+	margin-left: 30px;
+	padding: 0;
+	
+}
+
+.listElement {
+	margin: 20px 0;
+	font-size: 1.25em;
+}
+.listQuestElement {
+	margin: 10px 0 0 50px;
+	
+}
+
+#button {
+	display: block;
+	padding: 30px 50px;
+	margin: 80px auto;
+	border: 1px solid black;
+	background: lightblue;
+	font-size: 2em;
+}
+label {
+	display:block;
+
+}
+input[type="checkbox"] {
+	margin:3px 10px; 
+}
+
+.modal {
+    position: absolute;
+	display: block;
+    min-width: 100%;
+    min-height: 100%;
+	font-size: .75em;
+    background-color: rgba(0,0,0,.5);
+}
+.modal-inner {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+	text-align: center;
+    width: 40%;
+    height: 30%;
+   
+
+    border: 2px solid grey;
+    background-color: white;
+}
+.modal-inner a {
+    position: absolute;
+    bottom: 15px;
+    left: 38%;
+	font-size: 1.5em;
+    width: 25%;
+}
+#exit {
+  cursor: pointer;
+}
+p {
+	font-size: 1.5em;
+}
