@@ -1,0 +1,24 @@
+.about {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#33253a',GradientType=0 );
+}
+.logos__list{
+	
+	margin-bottom: 40px;
+}
+.logos__item {
+	display: inline;
+	padding-top: 15px;
+	padding-bottom: 55px;
+	width:12%;
+}
+.slider__paragraph, .column__paragragh, .post__item, .post__under, .aside__paragraph, .news__copyright, ..news__item, .signature {
+	font-family: 'Open Sans', Calibri, Tahoma, sans-serif; 
+
+}
+.slider {
+	margin-top: 168px;
+	height: 400px;
+	
+	background-image: url(../img/slider.png);
+	
+}

@@ -1,0 +1,168 @@
+#container {
+    background: lightblue;
+    padding: 0 0 40px;
+}
+nav {
+    background-color: rgb(36, 76, 100);
+    padding: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+/* sub navigation */
+
+nav li ul {
+    background-color: rgb(36, 76, 100);
+    position: absolute;
+    left: 0;
+    top: 40px;
+    /* make this equal to the line-height of the links (specified below) */
+    
+    width: 200px;
+}
+nav li li {
+    position: relative;
+    margin: 0;
+    display: block;
+}
+nav li li ul {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    /* make this equal to the width of the sub nav above */
+    
+    margin: 0;
+}
+/* style all links */
+
+nav a {
+    line-height: 40px;
+    padding: 0 12px;
+    margin: 0 12px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: rgb(0, 76, 75);
+}
+/* style sub level links */
+
+nav li li a {
+    border-bottom: solid 1px rgb(0, 0, 0);
+    margin: 0;
+    padding-left: 10px;
+}
+nav li li:last-child a {
+    border-bottom: none;
+}
+/* show arrows for dropdowns */
+
+nav li.dropdown > a {
+    background-image: url('../img/arrow-down.png');
+    background-position: right 20px;
+    background-repeat: no-repeat;
+}
+nav li li.dropdown > a {
+    background-image: url('../img/arrow-right.png');
+    background-position: right 16px;
+    background-repeat: no-repeat;
+}
+/* hide sub menu links */
+
+ul.sub-menu {
+    display: none;
+    z-index: 3;
+}
+.selector {
+    position: absolute;
+    top: 100px;
+    right: 120px;
+}
+#checkboxes {
+    margin: 0 auto;
+    width: 900px;
+}
+/*checkbox-css*/
+
+#checkboxes__css {
+    margin-left: 50px;
+}
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+label {
+    cursor: pointer;
+    display: block;
+    margin-left: 23px;
+}
+label:before {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-sprite.png);
+    position: relative;
+    top: 3px;
+    margin-right: 50px;
+}
+input[type=checkbox]:checked + label:before {
+    background-position: 0px -17px;
+}
+label:hover:before {
+    background-position: 0 -34px;
+}
+input[type=checkbox]:checked + label:hover::before {
+    background-position: 0 -51px;
+}
+/*checkbox-jQuery*/
+
+#checkboxes__jquery {
+    width: 400px;
+    position: relative;
+    left: 300px;
+    top: 130px;
+}
+#checkboxes__jquery h2 {
+    position: relative;
+    left: 400px;
+}
+.niceCheck {
+    position: relative;
+    left: 400px;
+    width: 17px;
+    height: 17px;
+    display: block;
+    cursor: pointer;
+    background: url(../img/checkbox-sprite.png);
+    margin-bottom: 5px;
+}
+.niceCheck input {
+    display: none;
+}
+.niceCheck:after {
+    content: "Серфинг";
+    position: relative;
+    left: 50px;
+}
+.niceCheck:first-of-type::after {
+    content: "Виндсерфинг";
+    position: relative;
+    left: 50px;
+}
+.niceCheck:last-of-type::after {
+    content: "Кайтсерфинг";
+    position: relative;
+    left: 50px;
+}

@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+	background: tomato;
+}
+ul {
+	margin: 80px;
+	list-style: none;
+}
+li {
+	margin: 200px auto;
+	font-size:3em;
+	text-transform: uppercase;
+	color: gold;
+	text-align: center;
+}

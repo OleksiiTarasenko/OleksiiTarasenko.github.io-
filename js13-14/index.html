@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>js-13-14</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/tmpl.js"></script>
+  <script src="js/script.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <script type="text/template" id="tmpl">
+      <div class="container">
+     
+      
+        <h1>Тест по Java Script</h1>
+        <form action="index.html" method="get" id="myForm">
+          <% for (var i = 0; i < data.length; i++) { %>
+          <div><h2><%= i + 1 + '. ' + data[i].question %></h2>
+             <% for (var j = 0; j < data[i].answers.length; j++) { %> 
+            <label><input type="checkbox" id="<%= i + 1 %>-1"><span><%= data[i].answers[j].option %></span></label>
+             <% } %>
+            
+          </div>
+          <% } %>
+          <button type="submit" id="button">Проверить мои результаты</button>
+        </form>
+     
+      </div>
+    </script>
+   
+    </body>
+</html>

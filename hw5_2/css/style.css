@@ -1,0 +1,12 @@
+#main { 
+	margin: 0 auto;
+	width: 506px;
+	height: 551px;
+	position: relative;
+	top: 100px;
+	border: 6px solid white;
+	border-collapse: collapse;
+}
+td {
+	border: 5px solid #000;
+}

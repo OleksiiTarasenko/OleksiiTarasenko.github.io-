@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#tabs-1, #tabs-2, #tabs-3 {
+	display: none;
+	background:lightgrey;
+	margin-top: 15px;
+}	
+
+.help {
+	display:none;
+}
+#tabs{
+	margin: 0 auto;
+	width: 700px;
+	height: 200px;
+	overflow: auto;
+	border: 1px solid grey;
+	background:lightgrey;
+}
+ul {
+	margin: 0 auto;
+	width: 690px;
+	list-style: none;
+	background: lightgrey;
+	border: 1px solid grey;
+
+	font-size: 32px;
+	padding: 0 4px;
+	
+}
+ul li {
+	display: inline-block;
+	font-size: 24px;
+	text-align: bottom;
+	position: relative;
+	top:2px;
+
+
+}
+ul li a {
+	text-decoration: none;
+	border: 1px solid grey;
+	border-bottom: none;
+	background: grey;
+	color: black;
+	border-radius: 5px 5px 0px 0px;
+-moz-border-radius: 5px 5px 0px 0px;
+-webkit-border-radius: 5px 5px 0px 0px;
+border: 0px solid #000000;
+}
+fieldset {
+	margin: 10px auto;
+	width: 700px;
+}
+input {
+	margin: 8px 0;
+}
+#lastname {
+	margin-left: 1px;
+}
+#address {
+	margin-left:8px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>js-9-10</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!--<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/script-checkbox.js"></script>
+  <script src="js/jquery.nice-select.js"></script>
+  <script type="text/javascript" src="js/jquery.color-2.1.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/jscarousel.css">
+  <link rel="stylesheet" type="text/css" href="css/nice-select.css">-->
+  <script src="build/js/production.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="build/css/production.min.css">
+  </head>
+  <body>
+<div id="container">
+<nav>
+    <ul>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Новости</a></li>
+        <li class="dropdown">
+            <a href="#">Товары</a>
+            <ul class="sub-menu">
+                <li><a href="#">Здоровье</a></li>
+               <li><a href="#">Оборудование</a></li>
+               <li><a href="#">Литература</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Услуги</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Обучение</a></li>
+                        <li><a href="#">Сертификация</a></li>
+                        <li><a href="#">Консультации</a></li>
+                        <li><a href="#">Соревнования</a></li> 
+                    </ul>
+                </li>
+                <li><a href="#">Подарки</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</nav>
+        <div class="wrapper">
+             <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="build/img/img1.jpg" width="600" height="400" alt="slide 1"></li>
+                        <li><img src="build/img/img2.jpg" width="600" height="400" alt="slide 2"></li>
+                        <li><img src="build/img/img3.jpg" width="600" height="400" alt="slide 3"></li>
+                        <li><img src="build/img/img1.jpg" width="600" height="400" alt="slide 4"></li>
+                        <li><img src="build/img/img2.jpg" width="600" height="400" alt="slide 5"></li>
+                        <li><img src="build/img/img3.jpg" width="600" height="400" alt="slide 6"></li>
+                     </ul>   
+                </div>
+
+                <p class="photo-credits">
+                    Photos by <a href="http://www.wallpaperswide.com">Wallpaperswide</a>
+                </p>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination">
+                    
+                </p>
+            </div>
+        </div>
+        <div class="selector">
+        <p>Выберите язык</p>
+        <select>
+        <option>Русский</option>
+        <option>Українська</option>
+        <option>English</option>
+        <option>Deutsch</option>
+        <option>Suomi</option>
+        <option>Italiano</option>
+        </select>
+        </div>
+   <div id="checkboxes">
+      <div  id="checkboxes__jquery">
+          <h2> Чекбоксы jQuery</h2>
+            <span class="niceCheck"><input type="checkbox" name="ch1" /></span>
+            <span class="niceCheck"><input type="checkbox" name="ch2" /></span>
+            <span class="niceCheck"><input type="checkbox" name="ch3" /></span>
+      </div> 
+      <div  id="checkboxes__css">
+          <h2> Чекбоксы CSS</h2>
+          <input type="checkbox" id="test-check1">
+          <label for="test-check1">Виндсерфинг</label>
+          <input type="checkbox" id="test-check2">
+          <label for="test-check2">Серфинг</label>
+          <input type="checkbox" id="test-check3">
+          <label for="test-check3">Кайтсерфинг</label>
+      </div>
+   </div>
+  </div>
+    </body>
+</html>
