@@ -1,0 +1,91 @@
+/* open-sans-regular - latin */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v17-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  
+  /* open-sans-600 - latin */
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url('../fonts/open-sans-v17-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v17-latin-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #121116;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .container {
+    background-color: #121116;
+    color: white;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .logo {
+    margin-top: 117px;
+    height: 85px;
+  }
+  
+  .blue {
+    color: #01bbed;
+  }
+  
+  .nav {
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 19px;
+    padding-bottom: 82px;
+  }
+  
+  .nav-item {
+    margin-right: 28px;
+    display: inline-block;
+  }
+  
+  .nav-item:first-of-type {
+    margin-left: 30px;
+  }
+  
+  .line {
+    background-color: white;
+    height: 1px;
+    width: 230px;
+    margin-left: 13px;
+    margin-top: 15px;
+  }
+  
+  .slogan {
+    padding-left: 5px;
+  }
+  
+  .slogan p {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .copyright {
+    padding-left: 5px;
+    text-transform: capitalize;
+  }
