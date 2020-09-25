@@ -7,9 +7,7 @@
 @font-face {
   font-family: "MyriadProRegular";
   src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
-  url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -25,15 +23,16 @@
   font-size: 0;
   color: #a4a4a4;
   width: 88%;
+  height: 100%;
   font-family: 'Proxima Nova', sans-serif;
 }
 
 .icon_wrapper {
   background-color: #2a69a6;
-  width: 65px;
-  height: 65px;
+  width: 64px;
+  height: 64px;
   text-align: center;
-  line-height: 90px;
+  line-height: 89px;
   margin: 0 auto;
   border-radius: 50%;
   color: white;
@@ -44,24 +43,37 @@
   border: solid 1px #2a69a6;
 }
 
+.icon_wrapper:hover>.regular {
+  display: none;
+}
+
+.icon_wrapper:hover>.hovered {
+  display: inline-block;
+}
+
 .horizontal {
   display: inline-block;
   width: 33.33%;
+  min-width: 160px;
   text-align: center;
 }
 
 p {
   font-size: 14px;
   line-height: 20px;
-  padding: 0 45px;
+  padding: 0 10%;
   font-family: 'Myriad Pro', sans-serif;
 }
 
 h2 {
   font-size: 14px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 600;
   margin: 10px 0 12px 0;
   text-transform: uppercase;
   color: black;
+}
+
+.hovered {
+  display: none;
 }
