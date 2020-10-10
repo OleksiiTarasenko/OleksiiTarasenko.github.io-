@@ -13,9 +13,8 @@
   font-weight: normal;
   font-style: normal;
 }
-.wraper {
+.container {
   background-color: #e2e7ec;
-  border: 0;
 }
 
 .entry {
