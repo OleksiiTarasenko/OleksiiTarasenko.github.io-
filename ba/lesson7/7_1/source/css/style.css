@@ -9,6 +9,7 @@
   font-size: 0;
   color: #999;
   width: 88%;
+  margin: 0 auto;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
@@ -42,6 +43,7 @@
 }
 
 .horizontal {
+  vertical-align: top;
   display: inline-block;
   width: 25%;
   text-align: center;
