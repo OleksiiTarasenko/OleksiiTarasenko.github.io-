@@ -9,21 +9,27 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: url("../img/Body.png") no-repeat;
+  background: url("../img/Body.png") no-repeat center;
   font-family: "Playfair Display", serif;
 }
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 87.5%;
   height: 80%;
   padding: 128px 98px 200px;
+  margin: 0 auto;
 }
 .card {
+  width: calc((1400 - 240) / 1400 * 100%);
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   align-items: flex-start;
   padding: 80px 0 120px;
   letter-spacing: -0.05px;
+  text-align: justify;
 }
 h2 {
   font-size: 42px;
