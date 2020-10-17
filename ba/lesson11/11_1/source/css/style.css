@@ -10,6 +10,10 @@ body {
   font-size: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   display: flex;
   flex-direction: column;
