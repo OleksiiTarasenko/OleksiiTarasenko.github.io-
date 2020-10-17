@@ -131,10 +131,11 @@ body {
   background: #00b1b1;
   position: relative;
   min-height: 700px;
-  height: 1px;
+  height: 70vh;
   z-index: -1;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: white;
 }
 
@@ -147,9 +148,9 @@ body {
 .about__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  padding: 15% 10% 0 6.66%;
+  padding: 5% 10% 0 6.66%;
   height: 65%;
 }
 
