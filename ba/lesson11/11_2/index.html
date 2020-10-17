@@ -4,47 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="source/css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
-    <title>10-2</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <title>11-2</title>
   </head>
   <body>
     <div class="container">
-      <header class="title">
-        <form action="#">
-          <label for="word_processor">Title</label>
-          <input type="text" name="input_text" id="word_processor" value="Like Tears In Ra" autofocus>
-        </form>
-        <div class="tools">
-          <ul class="tools_list">
-            <li class="tools_item"><div class="icon color"></div></li>
-            <li class="tools_item"><a href="http://google.com" target="_blank"></a><div class="icon case"></div></li>
-            <li class="tools_item"><div class="icon image"></div></li>
-            <li class="tools_item"><div class="icon bold"></div></li>
-            <li class="tools_item"><div class="icon italic"></div></li>
-            <li class="tools_item"><div class="icon underline"></div></li>
-            <li class="tools_item"><div class="icon justify"></div></li>
-            <li class="tools_item"><div class="icon left"></div></li>
-            <li class="tools_item"><div class="icon center"></div></li>
-            <li class="tools_item"><div class="icon right"></div></li>
-          </ul>
+      <section class="product">
+        <header class="header">
+          <div class="logo">
+            <img src="./source/img/logo.png" alt="Nike logo">
+          </div>
+        </header>
+        <div class="card">
+          <div class="card__image">
+            <img src="./source/img/Nike-SB-Stefan-Janoski-Max.png" alt="shoe">
+          </div>
+          <div class="card__info">
+            <div class="info">
+              <h1 class="info__header">Nike SB Stefan Janoski Max</h1>
+              <p class="info__description">Unisex Skateboarding Shoe</p>
+            </div>
+            <div class="rating">
+              <ul class="rating__list">
+                <li class="rating__item rating__item_selected"><i class="fas fa-star"></i></li>
+                <li class="rating__item rating__item_selected"><i class="fas fa-star"></i></li>
+                <li class="rating__item rating__item_selected"><i class="fas fa-star"></i></li>
+                <li class="rating__item"><i class="fas fa-star"></i></li>
+                <li class="rating__item"><i class="fas fa-star"></i></li>
+              </ul>
+            </div>
+            <form action="#" class="info__select">
+              <div class="selectors">
+                <select name="size" class="selectors__size">
+                  <option value="value1" selected>Size</option>
+                  <option value="value2">6</option>
+                  <option value="value3">6.5</option>
+                  <option value="value4">7</option>
+                  <option value="value5">7.5</option>
+                  <option value="value6">8</option>
+                  <option value="value7">8.5</option>
+                  <option value="value8">9</option>
+                  <option value="value9">9.5</option>
+                  <option value="value10">10</option>
+                  <option value="value11">10.5</option>
+                  <option value="value12">11</option>
+                  <option value="value13">11.5</option>
+                  <option value="value14">12</option>
+                  <option value="value15">12.5</option>
+                  <option value="value16">13</option>
+                  <option value="value17">13.5</option>
+                  <option value="value18">14</option>
+                  <option value="value19">14.5</option>
+                  <option value="value20">15</option>
+                </select>
+                <select name="quantity" class="selectors__qty">
+                  <option value="value1" selected>Qty</option>
+                  <option value="value2">1</option>
+                  <option value="value3">2</option>
+                  <option value="value4">3</option>
+                  <option value="value5">4</option>
+                  <option value="value6">5</option>
+                  <option value="value7">6</option>
+                  <option value="value8">7</option>
+                  <option value="value9">8</option>
+                  <option value="value10">More</option>
+                </select>
+              </div>
+              <button class="btn selectors__btn">Add to cart</button>
+            </form>
+          </div>
         </div>
-      </header>
-      <div class="main">
-        <div class="doc">
-          <p class="author">Roy Batty, 2019</p>
-          <h1>Like Tears in Rain</h1>
-          <h3>Where am I going? How long have I got?</h3>
-          <p>I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion.
-            I watched C-beams glitter in the dark near the Tannhauser gate. 
-            All those moments will be lost in time... like tears in rain... <span>Time to die.</span>
-          </p>
-          <p>I don't know why he saved my life. Maybe in those last moments he loved life more
-            than he ever had before. Not just his life - anybody's life; my life.
-            All he'd wanted were the same answers...
-          </p>
-        </div>
-      </div>
+        <footer class="footer">
+          <div class="bullets">
+            <ul class="bullets__list">
+              <li>
+                <div class="bullets__item bullets__item_grey bullets__item_selected"></div>
+              </li>
+              <li>
+                <div class="bullets__item bullets__item_white"></div>
+              </li>
+              <li>
+                <div class="bullets__item bullets__item_red"></div>
+              </li>
+              <li>
+                <div class="bullets__item bullets__item_teal"></div>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </section>
     </div>
   </body>
 </html>
