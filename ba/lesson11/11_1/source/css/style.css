@@ -27,7 +27,6 @@ body {
 }
 .header,
 .navi,
-.main,
 .home,
 .about {
   display: flex;
