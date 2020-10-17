@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: url("../img/Body.png") no-repeat center;
+  font-family: "Playfair Display", serif;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87.5%;
+  height: 80%;
+  padding: 128px 98px 200px;
+  margin: 0 auto;
+}
+.card {
+  width: calc((1400 - 240) / 1400 * 100%);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 80px 0 120px;
+  letter-spacing: -0.05px;
+  text-align: justify;
+}
+h2 {
+  font-size: 42px;
+  padding-bottom: 40px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 34px;
+  padding-bottom: 40px;
+}
+p:first-of-type::first-letter {
+  font-size: 110px;
+  padding: 25px 10px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  float: left;
+  font-weight: bold;
+}
+
+p:last-of-type {
+  font-size: 24px;
+  font-style: italic;
+}
+p:last-of-type::before {
+  content: "“";
+  display: inline-block;
+  font-size: 60px;
+  padding-right: 10px;
+}
+
+button {
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px #eaa258 solid;
+  color: #eaa258;
+  background: none;
+  padding: 20px 75px;
+  width: 280px;
+  margin-top: -20px;
+}
