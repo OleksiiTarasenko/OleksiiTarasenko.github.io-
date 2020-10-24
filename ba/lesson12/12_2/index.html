@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="source/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>12-2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="authentification">
+        <div class="tabs">
+          
+          <input type="radio" name="tabs" id="tab-1" checked />
+          <label for="tab-1">Sign in</label>
+          <input type="radio" name="tabs" id="tab-2" />
+          <label for="tab-2">Join us</label>
+        
+          <div class="tabs__content-1">
+            <form action="#" class="sign-in">
+              <label for="">User name</label><input type="text" name="name" id="name"  value="" pattern="^[A-Za-z]+\w{1,}" required/>
+              <div class="warning">
+                <p>error</p>
+              </div>
+              <label for="">Password</label><input type="password" name="password" id="password"  value="" pattern="\w{6,}" required/>
+              <div class="warning">
+                <p>error</p>
+              </div>
+              <input type="checkbox" name="keep_signed" id="keep_signed"value=""/>
+              <label for="keep_signed">Keep me signed in</label>
+              <button type="submit">Sign in</button>
+            </form>
+          </div>
+          <div class="tabs__content-2">
+            <form action="#" class="sign-up">
+              <label for="">User name</label><input type="text" name="name" id="name"  value="" pattern="^[A-Za-z]+\w{1,}" required/>
+              <div class="warning">
+                <p>error</p>
+              </div>
+              <label for="">Password</label><input type="password" name="password" id="password"  value="" pattern="\w{6,}" required/>
+              <div class="warning">
+                <p>error</p>
+              </div>
+              <label for="">Repeat password</label><input type="password" name="repeat_password" id="repeat_password"  value="" pattern="\w{6,}" required />
+              <div class="warning">
+                <p>error</p>
+              </div>
+               <input type="checkbox" name="agreed" id="agreed" value=""/>
+              <label for="agreed">Agree to Terms and Conditions</label>
+              <button type="submit">Sign in</button>
+            </form>
+          </div>
+        </div>
+        <footer class="footer">
+          <div><a href="#" class="footer__link footer__link_forgot">Forgot password</a></div>
+          <div><a href="#" class="footer__link footer__link_create">Create an account</a></div>
+        <footer>
+      </div>
+    </div>
+  </body>
+</html>
