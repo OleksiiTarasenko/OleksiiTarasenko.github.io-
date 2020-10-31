@@ -18,14 +18,15 @@
   font-family: "Raleway", sans-serif;
 }
 
-.blog_wrapper {
+.blog {
   width: 78%;
   margin: 0 auto;
   padding-bottom: 120px;
   color: white;
+  background-color: #b07cf7;
 }
 
-header {
+.blog__header {
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0 auto;
