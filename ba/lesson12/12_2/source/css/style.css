@@ -48,16 +48,16 @@ a {
   justify-self: self-start;
 }
 
-.tabs__content-1,
-.tabs__content-2 {
+.tabs__content-sign-in,
+.tabs__content-join {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 375px;
 }
 
-.tabs__content-1 > form,
-.tabs__content-2 > form {
+.tabs__content-sign-in > form,
+.tabs__content-join > form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
