@@ -215,6 +215,7 @@ html {
 }
 .contact__text {
   font-size: 1rem;
+  margin-top: 3%;
 }
 
 .btn {
@@ -233,7 +234,7 @@ html {
   align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1023px) {
   .services,
 .about {
     min-height: 100vh;
@@ -259,14 +260,30 @@ html {
     padding: 5% 5%;
   }
 }
-@media screen and (max-width: 479px) {
-  .main {
-    display: none;
+@media screen and (min-width: 360px) and (max-width: 479px) {
+  .content {
+    width: 96%;
+  }
+  .content__text {
+    padding: 1% 1%;
   }
 
   .scroll,
 .logo_footer {
     display: none;
+  }
+
+  .services,
+.about {
+    min-height: 50vh;
+  }
+
+  .contact {
+    max-height: 20vh;
+  }
+
+  .we-do {
+    min-height: 180vh;
   }
 }
 @media screen and (max-height: 400px) {
@@ -280,5 +297,50 @@ html {
 
   .footer {
     height: 20vh;
+  }
+
+  .scroll,
+.logo_footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 359px) {
+  .services,
+.about {
+    min-height: 70vh;
+  }
+
+  .content {
+    width: 96%;
+  }
+  .content__text {
+    padding: 1% 1%;
+  }
+
+  .we-do {
+    min-height: 180vh;
+  }
+
+  .scroll,
+.logo_footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 319px) {
+  .main {
+    display: none;
+  }
+
+  .header {
+    height: 80vh;
+  }
+
+  .footer {
+    height: 20vh;
+  }
+
+  .scroll,
+.logo_footer {
+    display: none;
   }
 }
