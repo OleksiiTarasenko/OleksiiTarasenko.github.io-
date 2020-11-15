@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  width: 500px;
+  height: 600px;
+  background-color: darkgreen;
+  position: relative;
+}
+
+.backfaces {
+  width: 120px;
+  height: 168px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+
+}
+
+.front,
+.back {
+  position: absolute;
+
+
+  width: 120px;
+  height: 168px;
+  backface-visibility: hidden;
+  transition: 0.5s;
+  position: absolute;
+}
+
+.back {
+  background-color: #f00;
+}
+
+.front {
+  background-color: #00f;
+}
+
+.backfaces .back {
+  transform: rotateY(180deg);
+}
+
+#flip {
+  opacity: 0;
+}
+
+#flip:checked+.backfaces .front {
+  transform: rotateY(180deg);
+}
+
+#flip:checked+.backfaces .back {
+  transform: rotateY(360deg);
+  left: 280px;
+  top: -50px;
+}
+
+@for $i from 1 through 4 {
+  .backfaces:nth-child(#{$i})+.front:before {
+    content: "#{$i}";
+    display: block;
+    width: 50px;
+    height: 70px;
+    background-color: darkslateblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

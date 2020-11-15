@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s ease-out;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.blog {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  color: white;
+  background-color: #b07cf7;
+  font-family: "Raleway", sans-serif;
+}
+.blog .content {
+  position: relative;
+  top: 100%;
+}
+.blog .content > p {
+  position: absolute;
+  bottom: 65px;
+  left: 20px;
+  font-size: 19px;
+  font-weight: bold;
+  padding-right: 20px;
+  letter-spacing: 0.35px;
+}
+.blog .content > .author {
+  bottom: 25px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.blog__header {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+.blog__header h1 {
+  font-size: 90px;
+  padding-bottom: 20px;
+}
+.blog__header p {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.blog__main {
+  position: relative;
+  margin: 0 auto;
+  width: 78%;
+  max-width: 1400px;
+}
+
+.blog__entry {
+  position: relative;
+  display: block;
+  float: right;
+  margin-left: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 310px;
+  width: calc(33.33% - 20px);
+  max-width: 1400px;
+  overflow: hidden;
+}
+.blog__entry:last-of-type {
+  margin-left: 0;
+  background-image: url(../../img/smoothie.png);
+}
+.blog__entry:first-of-type {
+  background-image: url(../../img/raspberry.png);
+}
+.blog__entry:nth-of-type(2) {
+  background-image: url(../../img/soup.png);
+}
+.blog__entry:hover .content {
+  top: 90%;
+}
+.blog__entry:hover .mask {
+  opacity: 1;
+}
+
+button.btn_blog {
+  display: block;
+  font-size: 20px;
+  line-height: 25px;
+  background-color: #f72b3b;
+  padding: 18px 40px 15px;
+  width: 200px;
+  border: none;
+  margin: 45px auto 0;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  -webkit-box-shadow: 1px 3px 5px 3px #7b57ac;
+  -moz-box-shadow: 1px 3px 5px 3px #7b57ac;
+  box-shadow: 1px 3px 5px 3px #7b57ac;
+}
+
+.date {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 32px;
+  left: 32px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.date p {
+  font-size: 32px;
+  line-height: 25px;
+}
+
+.month {
+  font-size: 21px;
+}
+
+.mask {
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 80%);
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
