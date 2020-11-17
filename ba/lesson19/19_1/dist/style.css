@@ -30,6 +30,9 @@ img {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
 }
+.gallery__item:hover {
+  opacity: 0.5;
+}
 .gallery__item_top-left {
   grid-column: 1/span 2;
   grid-row: 1/span 2;

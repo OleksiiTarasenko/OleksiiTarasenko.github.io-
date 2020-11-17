@@ -36,9 +36,15 @@ img {
   }
 
   &__item {
+    &:hover {
+      opacity: .5;
+    }
+
     &_top-left {
       grid-column: 1/ span 2;
       grid-row: 1/ span 2;
+
+
     }
   }
 
