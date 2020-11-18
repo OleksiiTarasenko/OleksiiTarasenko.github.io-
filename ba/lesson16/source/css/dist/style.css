@@ -160,6 +160,11 @@ body {
   min-width: 400px;
   height: 90vh;
 }
+@media screen and (max-width: 480px) {
+  .home {
+    min-width: 0;
+  }
+}
 
 .about {
   display: flex;
