@@ -76,6 +76,13 @@
   max-width: 1400px;
   overflow: hidden;
 }
+@media screen and (max-width: 719px) {
+  .blog__entry {
+    float: none;
+    width: calc(100% - 20px);
+    margin: 0;
+  }
+}
 .blog__entry:last-of-type {
   margin-left: 0;
   background-image: url(../../img/smoothie.png);

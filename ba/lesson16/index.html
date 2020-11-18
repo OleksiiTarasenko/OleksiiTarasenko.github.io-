@@ -77,7 +77,12 @@
       </div>
       <div class="about" id="about">
         <div class="about__img">
-          <img src="./source/img/cup.png" alt="cup and berry" />
+          <picture>
+            <source srcset="./source/img/cup.png" media="(min-width: 720px)" />
+            <source srcset="./source/img/mobile/cup-mob-2x.png 2x" />
+
+            <img src="./source/img/mobile/tea-cup-mob.png" alt="cup" />
+          </picture>
         </div>
         <div class="about__content content">
           <header class="about__header">About Us</header>
