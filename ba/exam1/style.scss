@@ -307,3 +307,68 @@ body {
     }
   }
 }
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  input:checked~ul.navi__list {
+    display: block;
+    position: relative;
+    top: 20%;
+    left: 0;
+    font-size: 4rem;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .info__text {
+    width: 400px;
+
+  }
+
+  .review {
+    width: 600px;
+
+    @media screen and (max-width: 650px) {
+      width: 400px;
+    }
+
+    @media screen and (max-width: 360px) {
+      width: 300px;
+    }
+
+
+    &__image {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &__text {
+      position: relative;
+      top: 50px;
+
+      @media screen and (max-width: 767px) {
+        overflow: hidden;
+      }
+    }
+
+    &__subtitle {
+      position: relative;
+      top: 20px;
+
+      @media screen and (max-width: 767px) {
+        top: 40px;
+        left: 40%;
+      }
+    }
+
+
+
+
+  }
+
+  .gallery {
+    margin-bottom: 30px;
+  }
+
+}

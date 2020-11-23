@@ -273,3 +273,66 @@ body {
 .social__item a:hover {
   color: #5474fd;
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  input:checked ~ ul.navi__list {
+    display: block;
+    position: relative;
+    top: 20%;
+    left: 0;
+    font-size: 4rem;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .info__text {
+    width: 400px;
+  }
+
+  .review {
+    width: 600px;
+  }
+}
+@media screen and (-ms-high-contrast: active) and (max-width: 650px), screen and (-ms-high-contrast: none) and (max-width: 650px) {
+  .review {
+    width: 400px;
+  }
+}
+@media screen and (-ms-high-contrast: active) and (max-width: 360px), screen and (-ms-high-contrast: none) and (max-width: 360px) {
+  .review {
+    width: 300px;
+  }
+}
+@media screen and (-ms-high-contrast: active) and (max-width: 767px), screen and (-ms-high-contrast: none) and (max-width: 767px) {
+  .review__image {
+    display: none;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .review__text {
+    position: relative;
+    top: 50px;
+  }
+}
+@media screen and (-ms-high-contrast: active) and (max-width: 767px), screen and (-ms-high-contrast: none) and (max-width: 767px) {
+  .review__text {
+    overflow: hidden;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .review__subtitle {
+    position: relative;
+    top: 20px;
+  }
+}
+@media screen and (-ms-high-contrast: active) and (max-width: 767px), screen and (-ms-high-contrast: none) and (max-width: 767px) {
+  .review__subtitle {
+    top: 40px;
+    left: 40%;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .gallery {
+    margin-bottom: 30px;
+  }
+}
