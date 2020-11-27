@@ -1,4 +1,4 @@
-/* //Task 1
+//Task 1
 let age = prompt("How old are you?  ");
 age = +age;
 
@@ -56,7 +56,6 @@ switch (btnPressed) {
     break;
 }
 
-
 //Task 3
 
 let number = prompt("Enter 3-digit number...");
@@ -68,9 +67,9 @@ console.log(
 
 //Task 4
 
-let year = prompt("Enter a year...");
+let year_ = prompt("Enter a year...");
 console.log(
-  year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
+  year_ % 400 == 0 || (year_ % 4 == 0 && year_ % 100 != 0)
     ? "It's a leap year"
     : "It's a common year"
 );
@@ -83,7 +82,6 @@ console.log(
     ? "A palindrome"
     : "Not a palindrome"
 );
-
 
 //Task 6
 
@@ -101,19 +99,11 @@ switch (currency) {
     console.log(`You have got ${sum * EX_RATE_UAH} hryvnyas!`);
     break;
   case "AZN":
-    console.log(`You have got ${sum  EX_RATE_AZN} manats!`);
+    console.log(`You have got ${sum * EX_RATE_AZN} manats!`);
     break;
 }
 
-
 //Task 7
-
-let flash = prompt('Enter a size of flash drive in GB: ');
-
-console.log('You can place ' + Math.trunc(flash*1024/820) +' files on flashdrive');
-
-
-//Task 8
 
 let total = prompt("How much have you spent? ...");
 
@@ -131,7 +121,7 @@ console.log(
    UAH`
 );
 
-//Task 9
+//Task 8
 
 let circleLength = prompt("Enter a lentgh of circle: ");
 let perimter = prompt("Enter a perimter of square: ");
@@ -141,9 +131,8 @@ console.log(
     ? " You can fit the circle to the square"
     : "You can't fit the circle to the square"
 );
-*/
 
-//Task 10
+//Task 9
 let score = 0;
 let quest = {
   question1: {
@@ -179,7 +168,7 @@ for (let key of Object.keys(quest)) {
 
 console.log(`Your score is - ${score}`);
 
-//Task 11
+//Task 10
 
 let day = prompt("Enter a day");
 let month = prompt("Enter a month");
