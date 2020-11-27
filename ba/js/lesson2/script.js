@@ -178,14 +178,17 @@ day == "31" && month != "12"
   ? (nextDay = `1/${+month + 1}/${year}`)
   : day == "31" && month == "12"
   ? (nextDay = `1/1/${+year + 1}`)
-  : (day == "28" && month == "2" && year % 400 == 0) ||
-    (year % 4 == 0 && year % 100 != 0)
+  : day == "28" &&
+    month == "2" &&
+    (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
   ? (nextDay = `${+day + 1}/${+month}/${+year}`)
-  : (day == "29" && month == "2" && year % 400 == 0) ||
-    (year % 4 == 0 && year % 100 != 0)
+  : day == "29" &&
+    month == "2" &&
+    (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
   ? (nextDay = `1/${+month + 1}/${year}`)
-  : (day == "28" && month == "2" && year % 400 != 0) ||
-    (year % 4 != 0 && year % 100 != 0)
+  : day == "28" &&
+    month == "2" &&
+    (year % 400 != 0 || (year % 4 != 0 && year % 100 != 0))
   ? (nextDay = `1/${+month + 1}/${year}`)
   : day == "30" &&
     (month == "1" ||
