@@ -1,7 +1,5 @@
 "use strict";
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
 //Task 1
 var start = prompt(" Enter start number");
 var end = prompt("Enter end number");
@@ -48,7 +46,6 @@ console.log(positive, negative);
 for (var _i2 = 0; _i2 < 10; _i2++) {
   var num = prompt("Enter a number....");
   num = +num;
-  console.log(_typeof(num));
   num == 0 ? zero++ : num > 0 ? positive++ : negative++;
   num % 2 ? odd++ : even++;
 }

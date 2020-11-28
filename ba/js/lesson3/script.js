@@ -49,7 +49,7 @@ console.log(positive, negative);
 for (let i = 0; i < 10; i++) {
   let num = prompt("Enter a number....");
   num = +num;
-  console.log(typeof num);
+
   num == 0 ? zero++ : num > 0 ? positive++ : negative++;
   num % 2 ? odd++ : even++;
 }
