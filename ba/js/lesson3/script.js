@@ -1,4 +1,4 @@
-/* //Task 1
+//Task 1
 
 let start = prompt(" Enter start number");
 let end = prompt("Enter end number");
@@ -61,7 +61,6 @@ Zeroes:           ${zero}
 Odd numbers:      ${odd}
 Even numbers:     ${even}`);
 
-
 //Task 6
 do {
   let firstNum = +prompt("Enter a number: ");
@@ -95,7 +94,6 @@ do {
     "Another calculation? (Y - continue/ any key - finish) "
   );
 } while (continueCalc == "Y");
- 
 
 //Task 7
 let numberToShift = prompt("Enter a number  ");
@@ -139,8 +137,7 @@ do {
   );
 } while (exit != "n");
 
-
-//Task 9 - Now works correct for numbers  like 100
+//Task 9
 
 console.log(" Times table ");
 
@@ -154,12 +151,12 @@ for (let i = 2; i < 10; i++) {
     console.log(`${i} x ${j} = ${i * j}`);
   }
 }
- */
+
 //Task 10
 var secret = 48;
 var factor = 32;
 do {
-  var condition = prompt(`Your number is ${secret} ( = )
+  var condition = prompt(`  Your number is ${secret} ( = )
   Your number is greater than  ${secret}  ( > )
   Your number is less than  ${secret}  ( < ) `);
   condition == ">"
