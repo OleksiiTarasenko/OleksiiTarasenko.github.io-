@@ -6,7 +6,7 @@ console.log("Hello " + yourName + " !");
 //Task 2
 
 const CURRENT_YEAR = 2020;
-let birthYear = prompt("When your were born?   ");
+let birthYear = prompt("When  were your born?   ");
 
 let age = CURRENT_YEAR - birthYear;
 console.log("You are " + age + " years old!");
@@ -88,7 +88,7 @@ alert(`hello ${name}`); // ?  'hello Ilya
 */
 //Extra 3
 
-let a = prompt("Первое число?", 1);
-let b = prompt("Второе число?", 2);
+let a = +prompt("Первое число?", 1);
+let b = +prompt("Второе число?", 2);
 
-alert(+a + +b);
+alert(a + b);
