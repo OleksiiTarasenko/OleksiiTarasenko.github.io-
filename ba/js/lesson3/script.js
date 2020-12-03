@@ -168,6 +168,8 @@ do {
 } while (condition != "=");
 
 console.log(`Your number is ${secret}`);
+/* 
+// Class work - All Dividers
 
 let a = 32;
 let b = 64;
@@ -183,9 +185,11 @@ for (let i = gcd - 1; i > 1; i--) {
   !(a % i) && !(b % i) ? console.log(i) : {};
 }
 
-console.log(1);
+console.log(1); */
 
-/* let rows = 6;
+/*
+//Mentor's hour  - Йолка!
+let rows = 6;
 for (let i = 1; i <= rows; i++) {
   console.log(`${" ".repeat(rows - i)}${"*".repeat(2 * i - 1)}`);
 }
