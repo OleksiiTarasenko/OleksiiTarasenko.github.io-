@@ -1,4 +1,4 @@
-/* //Task 1
+//Task 1
 
 let start = prompt(" Enter start number");
 let end = prompt("Enter end number");
@@ -183,7 +183,7 @@ for (let i = gcd - 1; i > 1; i--) {
   !(a % i) && !(b % i) ? console.log(i) : {};
 }
 
-console.log(1); */
+console.log(1);
 
 /* let rows = 6;
 for (let i = 1; i <= rows; i++) {
