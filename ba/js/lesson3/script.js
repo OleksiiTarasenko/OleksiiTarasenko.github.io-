@@ -88,10 +88,9 @@ do {
       break;
     default: // Do nothing!!!
   }
-  var continueCalc = prompt(
-    "Another calculation? (Y - continue/ any key - finish) "
-  );
-} while (continueCalc == "Y");
+} while (
+  prompt("Another calculation? (Y - continue/ any key - finish) ") == "Y"
+);
 
 //Task 7
 let numberToShift = prompt("Enter a number  ");
@@ -102,39 +101,39 @@ console.log(numberToShift.slice(shift) + numberToShift.slice(0, shift));
 //Task 8
 
 var today = 0;
-var day$;
+var dayIs;
 do {
   switch (today) {
     case 0:
-      day$ = "Monday";
+      dayIs = "Monday";
       break;
     case 1:
-      day$ = "Tuesday";
+      dayIs = "Tuesday";
       break;
     case 2:
-      day$ = "Wednesday";
+      dayIs = "Wednesday";
       break;
     case 3:
-      day$ = "Thursday";
+      dayIs = "Thursday";
       break;
     case 4:
-      day$ = "Friday";
+      dayIs = "Friday";
       break;
     case 5:
-      day$ = "Saturday";
+      dayIs = "Saturday";
       break;
     case 6:
-      day$ = "Sunday";
+      dayIs = "Sunday";
       break;
     default: // Do nothing!!!
   }
 
   today = (today + 1) % 7;
-
-  var exit = prompt(
-    `Today is ${day$}. Do you want to see the next day? (any key - yes / n- finish) `
-  );
-} while (exit != "n");
+} while (
+  prompt(
+    `Today is ${dayIs}. Do you want to see the next day? (any key - yes / n- finish) `
+  ) != "n"
+);
 
 //Task 9
 
