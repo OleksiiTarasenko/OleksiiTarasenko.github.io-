@@ -87,8 +87,7 @@ do {
         `${firstNum} ${operationSign} ${secondNum} = ${firstNum / secondNum}`
       );
       break;
-    default:
-      break;
+    default: // Do nothing!!!
   }
   var continueCalc = prompt(
     "Another calculation? (Y - continue/ any key - finish) "
@@ -128,6 +127,7 @@ do {
     case 6:
       day$ = "Sunday";
       break;
+    default: // Do nothing!!!
   }
 
   today = (today + 1) % 7;

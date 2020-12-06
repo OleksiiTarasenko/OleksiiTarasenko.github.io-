@@ -53,7 +53,6 @@ switch (btnPressed) {
     break;
   default:
     console.log("Wrong button!!!");
-    break;
 }
 
 //Task 3
@@ -101,6 +100,8 @@ switch (currency) {
   case "AZN":
     console.log(`You have got ${sum * EX_RATE_AZN} manats!`);
     break;
+  default:
+    console.log(`You have got ${sum} dollars!`);
 }
 
 //Task 7
@@ -108,8 +109,7 @@ switch (currency) {
 let total = prompt("How much have you spent? ...");
 
 console.log(
-  `Total with discount applied
-  ${
+  `Total with discount applied  ${
     total < 200
       ? total
       : total < 300
@@ -117,8 +117,7 @@ console.log(
       : total < 500
       ? total * 0.95
       : total * 0.93
-  }
-   UAH`
+  }UAH`
 );
 
 //Task 8
