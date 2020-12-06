@@ -1,9 +1,9 @@
 //Task 1
 
-let start = prompt(" Enter start number");
-let end = prompt("Enter end number");
+let start = +prompt(" Enter start number");
+let end = +prompt("Enter end number");
 let sum = 0;
-for (let i = +start; i < +end + 1; i++) {
+for (let i = start; i < end + 1; i++) {
   sum += i;
 }
 
@@ -22,8 +22,8 @@ while (a != 0 && b != 0) {
 alert(`GCD of ${numA} and ${numB} is ${a + b} `);
 
 //Task 3
-dividers = [];
-let number = prompt("Enter a number");
+let dividers = [];
+let number = +prompt("Enter a number");
 
 for (let i = Math.trunc(number / 2); i > 0; i--) {
   if (number % i == 0) {
@@ -45,10 +45,9 @@ let negative = 0;
 let zero = 0;
 let odd = 0;
 let even = 0;
-console.log(positive, negative);
+
 for (let i = 0; i < 10; i++) {
-  let num = prompt("Enter a number....");
-  num = +num;
+  let num = +prompt("Enter a number....");
 
   num == 0 ? zero++ : num > 0 ? positive++ : negative++;
   num % 2 ? odd++ : even++;
