@@ -100,8 +100,8 @@ console.log(numberToShift.slice(shift) + numberToShift.slice(0, shift));
 
 //Task 8
 
-var today = 0;
-var dayIs;
+let today = 0;
+let dayIs;
 do {
   switch (today) {
     case 0:
@@ -151,10 +151,11 @@ for (let i = 2; i < 10; i++) {
 }
 
 //Task 10
-var secret = 48;
-var factor = 32;
+let secret = 48;
+let factor = 32;
+let condition;
 do {
-  var condition = prompt(`  Your number is ${secret} ( = )
+  condition = prompt(`  Your number is ${secret} ( = )
   Your number is greater than  ${secret}  ( > )
   Your number is less than  ${secret}  ( < ) `);
   condition == ">"
