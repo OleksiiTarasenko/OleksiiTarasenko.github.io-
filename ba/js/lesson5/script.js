@@ -8,7 +8,7 @@ const arrShowReverse = (arr) => {
 
 arrShowReverse([12, 123, 1234, 12345, 123456]);
 
-//Task 2 Fibbonachi numbers
+//Task 2 Fibonacci numbers
 
 function fibo(n) {
   if (n == 0) return 0;
