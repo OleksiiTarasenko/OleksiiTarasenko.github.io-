@@ -1,6 +1,5 @@
-"use strict";
+"use strict"; //Extra Task 1 Show reverse array
 
-//Extra Task 1 Show reverse array
 var arrShowReverse = function arrShowReverse(arr) {
   for (var i = arr.length - 1; i >= 0; i--) {
     console.log(arr[i]);
@@ -489,7 +488,7 @@ var printRooms = function printRooms(rooms) {
   try {
     for (var _iterator7 = rooms[Symbol.iterator](), _step7; !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {
       var room = _step7.value;
-      roomInfo = "Room \u2116".concat(room.room, " is equiped with ").concat(room.seats, " work places and belongs to ").concat(room.faculty, " faculty");
+      var roomInfo = "Room \u2116".concat(room.room, " is equiped with ").concat(room.seats, " work places and belongs to ").concat(room.faculty, " faculty");
       textDisplay(roomInfo, pStyle);
     }
   } catch (err) {

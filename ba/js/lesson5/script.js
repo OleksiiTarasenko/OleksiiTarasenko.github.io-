@@ -1,3 +1,4 @@
+"use strict";
 //Extra Task 1 Show reverse array
 
 const arrShowReverse = (arr) => {
@@ -237,7 +238,7 @@ let pStyle = [
 
 const printRooms = (rooms) => {
   for (let room of rooms) {
-    roomInfo = `Room №${room.room} is equiped with ${room.seats} work places and belongs to ${room.faculty} faculty`;
+    let roomInfo = `Room №${room.room} is equiped with ${room.seats} work places and belongs to ${room.faculty} faculty`;
     textDisplay(roomInfo, pStyle);
   }
 };
