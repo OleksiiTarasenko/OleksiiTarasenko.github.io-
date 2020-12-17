@@ -36,19 +36,19 @@ const shoppingList = [
 //1.1
 function showList(shoppingList) {
   console.log("Goods to buy:\n");
-  for (item of shoppingList) {
+  for (let item of shoppingList) {
     if (!item.bought) console.log(item);
   }
 
   console.log("Goods already bought:\n");
-  for (item of shoppingList) {
+  for (let item of shoppingList) {
     if (item.bought) console.log(item);
   }
 }
 
 //1.2
 function addToShoppingList(newItem, list) {
-  for (item of list) {
+  for (let item of list) {
     if (item.name === newItem.name) {
       item.quantity += newItem.quantity;
       item.bought = newItem.bought;
@@ -61,7 +61,7 @@ function addToShoppingList(newItem, list) {
 
 //1.3
 function buy(itemIsBought, list) {
-  for (item of list) {
+  for (let item of list) {
     if (item.name == itemIsBought) {
       item.bought = true;
       return list;
@@ -108,7 +108,7 @@ const check = [
 function print(check) {
   console.log(`-------JS-MARKET-------`);
 
-  for (item of check) {
+  for (let item of check) {
     console.log(`${item.name.padEnd(18, " ")}: ${item.quantity * item.price}$`);
   }
   console.log(`Total             : ${total(check)}$`);
@@ -128,7 +128,7 @@ function spentMost(check) {
   let greatestValue = 0,
     greatestName;
 
-  for (item of check) {
+  for (let item of check) {
     if (item.quantity * item.price > greatestValue) {
       greatestValue = item.quantity * item.price;
       greatestName = item.name;
@@ -236,7 +236,7 @@ let pStyle = [
 ];
 
 const printRooms = (rooms) => {
-  for (room of rooms) {
+  for (let room of rooms) {
     roomInfo = `Room №${room.room} is equiped with ${room.seats} work places and belongs to ${room.faculty} faculty`;
     textDisplay(roomInfo, pStyle);
   }
