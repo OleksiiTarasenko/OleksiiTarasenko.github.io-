@@ -175,7 +175,7 @@ let ourTime = {
   setMinutes: function (deltaMin) {
     this.hours =
       this.minutes + deltaMin > 59 || this.minutes + deltaMin < 0
-        ? this.hours + Math.trunc((this.minutes + deltaMin) / 60)
+        ? this.hours + Math.floor((this.minutes + deltaMin) / 60)
         : this.hours;
     if (this.minutes + (deltaMin % 60) < 0) {
       this.minutes = (this.minutes + 60 + (deltaMin % 60)) % 60;
@@ -188,20 +188,52 @@ let ourTime = {
   },
 
   setSeconds: function (deltaSec) {
-    this.setMinutes(Math.trunc(deltaSec / 60));
+    this.setMinutes(Math.trunc((this.seconds + deltaSec) / 60));
     if (this.seconds + (deltaSec % 60) < 0) {
       this.seconds = (this.seconds + 60 + (deltaSec % 60)) % 60;
       return this;
     }
-    this.seconds = this.seconds + ((deltaSec % 60) % 60);
+    this.seconds = (this.seconds + (deltaSec % 60)) % 60;
     return this;
   },
 };
 
 console.log(ourTime.show());
-ourTime.setHours(25);
+ourTime.setHours(2);
 console.log(ourTime.show());
-ourTime.setMinutes(-65);
+ourTime.setMinutes(-11);
 console.log(ourTime.show());
-ourTime.setSeconds(-3665);
+ourTime.setSeconds(-60025);
 console.log(ourTime.show());
+
+// Extra
+// Initial object
+let rect = {
+  upperLeft: { x: 0, y: 0 },
+  bottomRight: { x: 100, y: 100 },
+  info: function () {
+    return `Rectangle's top left coordinates x: ${this.upperLeft.x}, y: ${this.upperLeft.y}; bottom right coordinates x: ${this.bottomRight.x}, y: ${this.bottomRight.y}`;
+  },
+  getWidth: function () {
+    return `${Math.abs(this.bottomRight.x - this.upperLeft.x)}`;
+  },
+  getHeight: function () {
+    return `${Math.abs(this.bottomRight.y - this.upperLeft.y)}`;
+  },
+  getArea: function () {
+    return `Area is ${this.getHeight() * this.getWidth()}`;
+  },
+  changeWidth: function (deltaX) {
+    this.bottomRight.x += deltaX;
+  },
+};
+
+// function
+let area = (rectangle) => {
+  return `Area of rectangle is ${
+    Math.abs(rectangle.bottomRight.x - rectangle.upperLeft.x) *
+    Math.abs(rectangle.bottomRight.y - rectangle.upperLeft.y)
+  }`;
+};
+
+console.log(area(rect));
