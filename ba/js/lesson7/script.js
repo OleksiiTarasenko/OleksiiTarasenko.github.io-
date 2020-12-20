@@ -173,10 +173,7 @@ let ourTime = {
   },
 
   setMinutes: function (deltaMin) {
-    this.hours =
-      this.minutes + deltaMin > 59 || this.minutes + deltaMin < 0
-        ? this.hours + Math.floor((this.minutes + deltaMin) / 60)
-        : this.hours;
+    this.setHours(Math.floor((this.minutes + deltaMin) / 60));
     if (this.minutes + (deltaMin % 60) < 0) {
       this.minutes = (this.minutes + 60 + (deltaMin % 60)) % 60;
       return this;
