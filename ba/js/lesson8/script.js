@@ -11,8 +11,8 @@ class Circle {
   set setRadius(newRadius) {
     this.radius = newRadius;
   }
-  get getCircleLength() {
-    console.log(`The length of the circle is ${this.radius * Math.PI * 2}`);
+  get getCircleDiameter() {
+    console.log(`The diameter of the circle is ${this.radius * 2}`);
   }
   circleLength() {
     return (2 * Math.PI * this.radius).toFixed(3);
@@ -28,9 +28,9 @@ let largeCircle = new Circle(100);
 smallCircle.getRadius;
 smallCircle.setRadius = 3;
 smallCircle.getRadius;
-mediumCircle.getRadius;
+mediumCircle.getCircleDiameter;
 console.log(mediumCircle.circleArea());
-mediumCircle.getCircleLength;
+largeCircle.getCircleDiameter;
 console.log(largeCircle.circleLength());
 
 //Task 2
