@@ -175,24 +175,16 @@ let ourTime = {
   setMinutes: function (deltaMin) {
     this.setHours(Math.floor((this.minutes + deltaMin) / 60));
 
-    if (this.minutes + (deltaMin % 60) < 0) {
-      this.minutes = (this.minutes + 60 + (deltaMin % 60)) % 60;
-      return this;
-    }
-
-    this.minutes = (this.minutes + (deltaMin % 60)) % 60;
-
-    return this;
+    this.minutes + (deltaMin % 60) < 0
+      ? (this.minutes = (this.minutes + 60 + (deltaMin % 60)) % 60)
+      : (this.minutes = (this.minutes + (deltaMin % 60)) % 60);
   },
 
   setSeconds: function (deltaSec) {
     this.setMinutes(Math.trunc((this.seconds + deltaSec) / 60));
-    if (this.seconds + (deltaSec % 60) < 0) {
-      this.seconds = (this.seconds + 60 + (deltaSec % 60)) % 60;
-      return this;
-    }
-    this.seconds = (this.seconds + (deltaSec % 60)) % 60;
-    return this;
+    this.seconds + (deltaSec % 60) < 0
+      ? (this.seconds = (this.seconds + 60 + (deltaSec % 60)) % 60)
+      : (this.seconds = (this.seconds + (deltaSec % 60)) % 60);
   },
 };
 

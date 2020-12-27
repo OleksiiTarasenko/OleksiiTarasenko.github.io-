@@ -181,6 +181,51 @@ const textDisplay = (
 
 textDisplay("Welcome to Beetroot Academy!");
 
+// Correct styles array structure
+const stylesCorrect = [
+  {
+    propertyName: "color",
+    propertyValue: "grey",
+  },
+  {
+    propertyName: "text-align",
+    propertyValue: "right",
+  },
+  {
+    propertyName: "text-shadow",
+    propertyValue: "4px 10px black",
+  },
+  {
+    propertyName: "font-size",
+    propertyValue: "3rem",
+  },
+
+  {
+    propertyName: "letter-spacing",
+    propertyValue: "7px",
+  },
+  {
+    propertyName: "font-style",
+    propertyValue: "italic",
+  },
+];
+
+const textToDisplay = (
+  text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  styles = stylesCorrect,
+  tag = "p"
+) => {
+  styles = styles
+    .map(function (el) {
+      return `${Object.values(el)[0]}: ${Object.values(el)[1]};`;
+    })
+    .join("");
+
+  document.write(`<${tag} style = "${styles}">${text}</${tag}>`);
+};
+
+textToDisplay("JS is the best!");
+
 //Task 4
 
 const academy = [
