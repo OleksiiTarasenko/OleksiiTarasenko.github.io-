@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  width: 100%;
+}
+
+ul  {
+  list-style: none;
+  width: 30%;
+  padding: 25px;
+  display: block;
+  background-color: cornflowerblue;
+  color: beige;
+}
+
+p {
+  margin: -10% auto;
+  padding: 5%;
+ float:right;
+  width: 70%;
+  background-color: aquamarine;
+  color: blue;
+  
+}
+
+li.active {
+  color: red;
+}
+
+
+p.hide {
+  display: none;
+}
