@@ -2,10 +2,6 @@
 
 //Task 3
 class TrafficLights {
-  constructor() {
-    this.state = 1;
-  }
-
   lightsSwitch() {
     const container = document.createElement("div");
     document.body.appendChild(container);
@@ -40,6 +36,7 @@ class TrafficLights {
         lights[2].classList.toggle("light_off");
       }
       counter++;
+      counter %= 4;
     };
   }
 }
