@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.text {
+  width: 100%;
+  min-height: 30vh;
+  background-color: burlywood;
+  color: brown;
+  cursor: pointer;
+}
+
+.text_edit {
+  width: 100%;
+  min-height: 250px;
+}
