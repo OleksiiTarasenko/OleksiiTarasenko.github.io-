@@ -155,23 +155,23 @@ class News {
     this.tags = tags;
     this.date = new Date(date);
   }
-print() {
-  let tagString = `${this.tags.reduce(
-    (tagsHTML, currentValue) => tagsHTML + ` <span>${currentValue}</span> `
-  )}`;
-  let dateString =
-    Date.now() - this.date < 86400000
-      ? "Today"
-      : Date.now() - this.date < 86400000 * 2
-      ? `${Math.floor((Date.now() - this.date) / 86400000)} day ago`
-      : Date.now() - this.date < 86400000 * 7
-      ? `${Math.floor((Date.now() - this.date) / 86400000)} days ago`
-      : this.date.toLocaleDateString("en-GB");
-  
-  let newsString = `<h1> ${this.header}</h1>
+  print() {
+    let tagString = `${this.tags.reduce(
+      (tagsHTML, currentValue) => tagsHTML + ` <span>${currentValue}</span> `
+    )}`;
+    let dateString =
+      Date.now() - this.date < 86400000
+        ? "Today"
+        : Date.now() - this.date < 86400000 * 2
+        ? `${Math.floor((Date.now() - this.date) / 86400000)} day ago`
+        : Date.now() - this.date < 86400000 * 7
+        ? `${Math.floor((Date.now() - this.date) / 86400000)} days ago`
+        : this.date.toLocaleDateString("en-GB");
+
+    let newsString = `<h1> ${this.header}</h1>
   <p>${this.text}</p>${tagString} <p>${dateString}`;
-  document.write(newsString);
-}
+    document.write(newsString);
+  }
 }
 
 let recentNews = new News(
@@ -183,7 +183,7 @@ let recentNews = new News(
 
 let weekNews = new News(
   "UK experts are 'highly confident' that a new coronavirus variant is more contagious. Here's what that means",
-  "The new mutation is being called VUI-202012/01 -- the first \"Variant Under Investigation\" in the UK in December 2020. While scientists hunt for more information about the variant, its impact is already being felt, with dozens of countries imposing restrictions on travelers from the UK.",
+  'The new mutation is being called VUI-202012/01 -- the first "Variant Under Investigation" in the UK in December 2020. While scientists hunt for more information about the variant, its impact is already being felt, with dozens of countries imposing restrictions on travelers from the UK.',
   ["coronavirus", " mutation", "VUI-202012/01"],
   "2020, 12, 18"
 );
@@ -195,8 +195,6 @@ let breakingNews = new News(
   "2020, 12, 23"
 );
 
-
-
 let oldNews = new News(
   "Nepal's Organ Trail: How traffickers steal kidneys",
   "Kathmandu, Nepal (CNN)On the streets of Kathmandu, the sight of people begging for kidney treatment has become common.The capital of Nepal is no different from many places in the world where aging populations, poor diets and no health insurance systems mean increased organ disease. The organ in highest demand is the kidney and black market traffickers are meeting that demand. Up to 7,000 kidneys are obtained illegally every year, according to a report by Global Financial Integrity. Organ trafficking is an illegal, yet thriving trade around the globe. That same report shows the illegal organ trade generates profits between $514 million to $1 billion a year. In Kathmandu, we spotted a couple begging on the street for their son's kidney treatment. Jeet Bahadur Magar and his wife spent their entire savings to treat their son's kidney disease. Out of money and options, they are now out on the street hoping to raise enough funds to cover the medical bills.\"I pray to God that no one has to ever go through kidney failure problems,\" Jeet Bahadur said. But many Nepalis do.",
@@ -207,5 +205,3 @@ breakingNews.print();
 recentNews.print();
 weekNews.print();
 oldNews.print();
-
-
