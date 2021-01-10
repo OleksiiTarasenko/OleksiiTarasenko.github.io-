@@ -41,7 +41,8 @@ $("<p/>").addClass("mask__text").text("by Fabrizio Morra").appendTo($(".mask"));
 
 $("<div/>").addClass("triangle").appendTo($(".container"));
 $("<div/>").addClass("cross").appendTo($(".container"));
-let slideH = $(".slide").height();
-let slideW = $(".slide").width();
+/* let slideH = $(".slide").outerHeight();
+let slideW = $(".slide").outerWidth();
 $(".mask").height = slideH;
 $(".mask").width = slideW;
+ */
