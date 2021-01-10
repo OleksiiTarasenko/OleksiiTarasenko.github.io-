@@ -25,15 +25,15 @@
     
   }
 
-  .light_red {
+  .light_red.active {
     background-color:red;
   }
 
-  .light_yellow {
+  .light_yellow.active {
     background-color:yellow;
   }
   
-  .light_green {
+  .light_green.active {
     background-color:green;
   }
 
