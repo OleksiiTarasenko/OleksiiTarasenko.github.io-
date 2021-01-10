@@ -12,8 +12,9 @@ body {
 }
 
 .my-slider {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 .container {
@@ -24,7 +25,6 @@ body {
   justify-content: center;
   align-items: space-around;
   background-color: whitesmoke;
-  position: relative;
 }
 
 .slide {
@@ -108,4 +108,30 @@ body {
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
+}
+
+.slider__wrapper {
+  display: flex;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  position: relative;
+  min-width: 1200px;
+  max-width: 1400px;
+}
+
+.mask {
+  position: absolute;
+  width: 27.5%;
+  height: 200px;
+  top: 0;
+  left: 15px;
+  background-color: #32eaad;
+  opacity: 0.9;
+  z-index: 100;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
 }
