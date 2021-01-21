@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./img/bg.png");
+  display: flex;
+}
+
+.tabs {
+  width: 80%;
+  max-width: 800px;
+  min-height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #212434;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.tabs__header {
+  background-color: #2b2f3f;
+}
+
+.tabs__list {
+  list-style: none;
+  display: flex;
+}
+
+.tabs__item {
+  flex: 1 0 33.33%;
+  text-align: center;
+  background-position: 50% 33.33%;
+  display: flex;
+  background-repeat: no-repeat;
+  height: 80px;
+  opacity: 0.5;
+}
+.tabs__item > span {
+  margin: auto auto 10px;
+  text-transform: uppercase;
+}
+
+.tab_active {
+  opacity: 1;
+  display: flex;
+}
+.tabs__item_0 {
+  background-image: url("./img/tooltip.png");
+}
+
+.tabs__item_1 {
+  background-image: url("./img/card.png");
+}
+.tabs__item_2 {
+  background-image: url("./img/basket.png");
+}
+
+.tabs__info {
+  padding: 50px;
+  display: flex;
+  min-height: 400px;
+}
+.tabs__info_1 {
+  background-color: darkgray;
+}
+
+.tabs__info_2 {
+  background-color: grey;
+}
+
+.tabs__image-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tabs__image {
+  background-image: url("./img/cover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 260px;
+}
+
+.tabs__rating-stars {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.star {
+  color: black;
+  margin: 3px;
+  font-size: 1.375rem;
+}
+
+.active {
+  color: #fedc3f;
+}
+
+.tabs__info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 20px 0;
+}
+
+.tabs__headers-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headers__rating {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #777b9b;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+}
+.rating__list {
+  width: 60px;
+  height: 60px;
+  display: block;
+  list-style: none;
+  position: absolute;
+}
+
+.rating__number {
+  margin: auto;
+  font-size: 1.6rem;
+}
+
+.tabs__footer {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+
+.tabs__money {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.tabs__discount {
+  font-size: 1.2rem;
+  color: #fedc3f;
+}
+
+.tabs__price {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.buy-now {
+  width: 140px;
+  height: 50px;
+  background-color: #13e18c;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
