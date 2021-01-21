@@ -244,53 +244,58 @@ $(document).ready(function () {
     return GalleryImage;
   }();
 
-  var category = "christmas";
-  var galleryArr = [].concat(gallery);
-  galleryArr = galleryArr.filter(function (item) {
-    return item.keyword == category;
-  });
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
+  function galleryUpdate(keyword) {
+    $(".gallery__wrapper").empty();
+    var category = $(this).text().toLowerCase() || keyword;
+    var galleryArr = [].concat(gallery);
+    galleryArr = galleryArr.filter(function (item) {
+      return item.keyword == category;
+    });
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
 
-  try {
-    for (var _iterator = galleryArr[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var elem = _step.value;
-      var galleryImage = new GalleryImage(elem);
-      galleryImage.render();
-    }
-    /*  $(".contact__form").on("submit", function (event) {
-      $(".alert").hide();
-      $("#email").removeClass("wrong-format");
-      let emailToTest = $("#email").val();
-      if (emailToTest.indexOf("@") < 0) {
-        return false;
-      }
-      let emailArr = emailToTest.split("@");
-      event.preventDefault();
-      let s = emailArr[1];
-      if (s.indexOf(".") < 0) {
-        /*  $("#email").addClass("wrong-format"); 
-        $(".alert").show();
-        return false;
-      }
-      return true;
-    }); */
-
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
     try {
-      if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-        _iterator["return"]();
+      for (var _iterator = galleryArr[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var elem = _step.value;
+        var galleryImage = new GalleryImage(elem);
+        galleryImage.render();
       }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
     } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
+      try {
+        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+          _iterator["return"]();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
       }
     }
   }
+
+  galleryUpdate("building");
+  $(".selector").on("click", galleryUpdate);
+  /*  $(".contact__form").on("submit", function (event) {
+    $(".alert").hide();
+    $("#email").removeClass("wrong-format");
+    let emailToTest = $("#email").val();
+    if (emailToTest.indexOf("@") < 0) {
+      return false;
+    }
+    let emailArr = emailToTest.split("@");
+    event.preventDefault();
+    let s = emailArr[1];
+    if (s.indexOf(".") < 0) {
+      /*  $("#email").addClass("wrong-format"); 
+      $(".alert").show();
+      return false;
+    }
+    return true;
+  }); */
 
   $(".contact__form").on("submit", function (event) {
     event.preventDefault();
@@ -309,37 +314,5 @@ $(document).ready(function () {
     messages: {},
     errorElement: "div",
     errorLabelContainer: ".error"
-  });
-  $(".selector").on("click", function () {
-    $(".gallery__wrapper").empty();
-    var category = $(this).text().toLowerCase();
-    var galleryArr = [].concat(gallery);
-    galleryArr = galleryArr.filter(function (item) {
-      return item.keyword == category;
-    });
-    var _iteratorNormalCompletion2 = true;
-    var _didIteratorError2 = false;
-    var _iteratorError2 = undefined;
-
-    try {
-      for (var _iterator2 = galleryArr[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-        var elem = _step2.value;
-        var galleryImage = new GalleryImage(elem);
-        galleryImage.render();
-      }
-    } catch (err) {
-      _didIteratorError2 = true;
-      _iteratorError2 = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion2 && _iterator2["return"] != null) {
-          _iterator2["return"]();
-        }
-      } finally {
-        if (_didIteratorError2) {
-          throw _iteratorError2;
-        }
-      }
-    }
   });
 });

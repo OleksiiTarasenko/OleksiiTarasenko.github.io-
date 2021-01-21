@@ -276,13 +276,19 @@ $(document).ready(function () {
     }
   }
 
-  let category = "christmas";
-  let galleryArr = [...gallery];
-  galleryArr = galleryArr.filter((item) => item.keyword == category);
-  for (let elem of galleryArr) {
-    let galleryImage = new GalleryImage(elem);
-    galleryImage.render();
+  function galleryUpdate(keyword) {
+    $(".gallery__wrapper").empty();
+    let category = $(this).text().toLowerCase() || keyword;
+    let galleryArr = [...gallery];
+    galleryArr = galleryArr.filter((item) => item.keyword == category);
+    for (let elem of galleryArr) {
+      let galleryImage = new GalleryImage(elem);
+      galleryImage.render();
+    }
   }
+
+  galleryUpdate("building");
+  $(".selector").on("click", galleryUpdate);
 
   /*  $(".contact__form").on("submit", function (event) {
     $(".alert").hide();
@@ -319,16 +325,5 @@ $(document).ready(function () {
     messages: {},
     errorElement: "div",
     errorLabelContainer: ".error",
-  });
-
-  $(".selector").on("click", function () {
-    $(".gallery__wrapper").empty();
-    let category = $(this).text().toLowerCase();
-    let galleryArr = [...gallery];
-    galleryArr = galleryArr.filter((item) => item.keyword == category);
-    for (let elem of galleryArr) {
-      let galleryImage = new GalleryImage(elem);
-      galleryImage.render();
-    }
   });
 });
