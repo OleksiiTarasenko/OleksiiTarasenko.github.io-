@@ -10,7 +10,6 @@ $(document).ready(function () {
   $(".header__slider").slick({
     infinite: true,
     dots: true,
-    vertical: true,
     adaptiveHeight: true,
     arrows: false,
     slidesToShow: 1,

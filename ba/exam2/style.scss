@@ -190,6 +190,10 @@ body {
   }
 }
 
+.slick-slide:focus {
+  outline: none;
+}
+
 h2:before {
   content: "";
   display: block;
