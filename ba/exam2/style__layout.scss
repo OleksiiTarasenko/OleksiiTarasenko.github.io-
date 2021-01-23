@@ -5,8 +5,8 @@
   @extend %sect;
   flex-direction: column;
   position: relative;
-  height: calc(100vh + 170px);
-  min-height: 800px;
+  height: 100vh;
+  min-height: 640px;
   width: 100%;
   padding: 150px;
   font-family: 'gotham_bold';
