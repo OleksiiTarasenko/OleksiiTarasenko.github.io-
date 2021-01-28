@@ -1,0 +1,7 @@
+body {
+  background: green;
+}
+
+.container {
+  display: flex;
+}
