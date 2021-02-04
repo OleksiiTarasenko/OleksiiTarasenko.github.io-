@@ -18,7 +18,7 @@ const fetchAllMovies = function (pageNum) {
   request = $(".search__field").val();
   type = $('input[name="searchType"]:checked').val();
 
-  url = `http://www.omdbapi.com/?s=${request}&type=${type}&apikey=11b1ce48`;
+  url = `https://www.omdbapi.com/?s=${request}&type=${type}&apikey=11b1ce48`;
   let newurl = `${url}&page=${pageNum}`;
 
   const result = fetch(newurl)
@@ -56,7 +56,7 @@ const fetchAllMovies = function (pageNum) {
             $("<button/>")
               .text("Show Details")
               .click(function (event) {
-                let urlDetails = `http://www.omdbapi.com/?i=${myFilm.imdb}&apikey=11b1ce48`;
+                let urlDetails = `https://www.omdbapi.com/?i=${myFilm.imdb}&apikey=11b1ce48`;
                 const result = fetch(urlDetails)
                   .then((response) => {
                     return response.json();
