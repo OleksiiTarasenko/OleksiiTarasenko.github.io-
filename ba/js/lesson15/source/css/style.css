@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.search {
+  width: 300px;
+  margin: 50px auto 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.films {
+  margin: 0 auto;
+  width: 800px;
+  list-style: none;
+}
+
+.films__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.page {
+  margin: 10px;
+  color: blue;
+  cursor: pointer;
+}
+
+.film__details {
+  width: 800px;
+  margin: 10px auto;
+  padding: 25px;
+}
+.film__title {
+  text-align: center;
+}
+
+.film__poster {
+  display: block;
+  width: 25%;
+  margin: 10px auto;
+}
+
+.total-results {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+}
