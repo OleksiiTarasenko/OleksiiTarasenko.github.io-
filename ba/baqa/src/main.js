@@ -7,7 +7,7 @@ import store from "./store";
 Vue.config.productionTip = false;
 
 const firebaseConfig = {
-  apiKey: "",
+  apiKey: "***",
   authDomain: "baqa-ec8f3.firebaseapp.com",
   databaseURL:
     "https://baqa-ec8f3-default-rtdb.europe-west1.firebasedatabase.app",

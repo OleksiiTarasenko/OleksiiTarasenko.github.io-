@@ -4,6 +4,7 @@ import Login from "../components/Login";
 import Register from "../components/Register";
 import Registered from "../components/Registered";
 import Dashboard from "../components/Dashboard";
+import Error from "../components/Error";
 import Home from "../components/Home";
 
 Vue.use(Router);
@@ -19,7 +20,7 @@ const router = new Router({
     },
     {
       path: "/login",
-      name: "login",
+      name: "Login",
       component: Login,
     },
     {
@@ -36,6 +37,11 @@ const router = new Router({
       path: "/dashboard",
       name: "Dashboard",
       component: Dashboard,
+    },
+    {
+      path: "/error",
+      name: "Error",
+      component: Error,
     },
   ],
 });
