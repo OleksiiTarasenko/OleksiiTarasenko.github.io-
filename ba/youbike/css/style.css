@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'helveticaneuecyrmedium';
+    src: url('../fonts/helveticaneuecyr-medium-webfont.woff2') format('woff2'), url('../fonts/helveticaneuecyr-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'helveticaneuecyrmedium', Tahoma, sans-serif;
+    margin: 0 auto;
+}
+nav {
+    background-color: rgb(7, 81, 144);
+    list-style: none;
+    margin: 0;
+    height: 42px;
+}
+nav ul {
+    margin-left: 450px;
+    font-size: 0;
+    position: relative;
+}
+nav ul li {
+    display: block;
+    float:right;
+    font-size: 16px;
+    height: 42px;
+    line-height: 40px;
+    margin: 0;
+    min-width: 80px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+nav ul li img {
+    float: left;
+    height: 23px;
+    margin: 8px 10px 0px 5px;
+}
+nav ul li:first-child {
+    width: 215px;
+    margin-right: 20px;
+    background-color: rgb(18, 171, 218);
+}
+    nav ul li:nth-child(2) {
+    border-left: 1px solid rgb(78, 162, 219);
+    color: white;
+    width: 160px;
+}
+nav ul li a {
+    color: rgb(78, 162, 219);
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    text-decoration: none;
+}
+nav ul li:first-child a, nav ul li:nth-child(2) a {
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    background-color: rgb(18, 171, 218);
+    color: rgb(255, 255, 255);
+}
+
+nav ul li:nth-child(2) a:hover {
+    background-color: rgb(7, 81, 144);
+    color: white;
+}
+.underline {
+    text-decoration: underline;
+}
+.main {
+    height: 95vh;
+    position: relative;
+}
+.formspace {
+    background-color: rgba(15, 15, 15, 0.8);
+    display: block;
+    height: 614px;
+    left: 50%;
+    margin: -307px 0 0 -280px;
+    position: absolute;
+    top: 50%;
+    width: 560px;
+    z-index: 3;
+    line-height: 20px;
+}
+
+
+.formspace h1 {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+}
+.lines {
+    color: rgb(153, 153, 153);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.lines span {
+    color: rgb(153, 153, 153);
+    text-align: center;
+}
+.lines:before {
+    background-color: #999;
+    border-bottom: 1px solid black;
+    content: " ";
+    display: inline-block;
+    height: 1px;
+    margin: 0 0 5px 20px;
+    text-shadow: none;
+    width: 126px;
+}
+.lines:after {
+    background-color: #999;
+    border-bottom: 1px solid black;
+    content: " ";
+    display: inline-block;
+    height: 1px;
+    margin: 0 20px 5px 0;
+    text-shadow: none;
+    width: 126px;
+}
+.formitem {
+    text-align: center;
+}
+input[type=text],
+input[type=email],
+input[type=password] {
+    border: none;
+    background-color: black;
+    color: rgb(201, 201, 201);
+    font-family: 'helveticaneuecyrmedium', Tahoma, sans-serif;
+    font-size: 18px;
+    height: 42px;
+    margin-top: 9px;
+    padding-left: 20px;
+    width: 270px;
+
+}
+label {display:block;
+    min-width: 250px;
+    margin: 15px 0;
+    color: rgb(201, 201, 201);
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    background-color: rgb(27, 82, 136);
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(28, 102, 122, 1);;
+    -moz-box-shadow: 0px 0px 17px 3px rgba(28, 102, 122, 1);;
+    box-shadow: 0px 0px 17px 3px rgba(28, 102, 122, 1);;
+}
+.facebook {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+3,64769e+6,475a85+9,425782+12,415588+18,3e5287+24,3e5486+29,394c77+59,354671+79,36416e+91,374069+94,ffffff+97,ffffff+100&0+0,0+3,1+6,1+94,0+97,0+100 */
+    
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 3%, rgba(100, 118, 158, 1) 6%, rgba(71, 90, 133, 1) 9%, rgba(66, 87, 130, 1) 12%, rgba(65, 85, 136, 1) 18%, rgba(62, 82, 135, 1) 24%, rgba(62, 84, 134, 1) 29%, rgba(57, 76, 119, 1) 59%, rgba(53, 70, 113, 1) 79%, rgba(54, 65, 110, 1) 91%, rgba(54, 63, 102, 1) 94%, rgba(255, 255, 255, 0) 97%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 3%, rgba(100, 118, 158, 1) 6%, rgba(71, 90, 133, 1) 9%, rgba(66, 87, 130, 1) 12%, rgba(65, 85, 136, 1) 18%, rgba(62, 82, 135, 1) 24%, rgba(62, 84, 134, 1) 29%, rgba(57, 76, 119, 1) 59%, rgba(53, 70, 113, 1) 79%, rgba(54, 65, 110, 1) 91%, rgba(54, 63, 102, 1) 94%, rgba(255, 255, 255, 0) 97%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 3%, rgba(100, 118, 158, 1) 6%, rgba(71, 90, 133, 1) 9%, rgba(66, 87, 130, 1) 12%, rgba(65, 85, 136, 1) 18%, rgba(62, 82, 135, 1) 24%, rgba(62, 84, 134, 1) 29%, rgba(57, 76, 119, 1) 59%, rgba(53, 70, 113, 1) 79%, rgba(54, 65, 110, 1) 91%, rgba(54, 63, 102, 1) 94%, rgba(255, 255, 255, 0) 97%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=0);
+    /* IE6-9 */
+    
+    border-radius: 7px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    width: 290px;
+}
+.facebook a {
+    color: white;
+    display: inline-block;
+    font-family: 'helveticaneuecyrmedium', Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: bottom;
+}
+.facebook:before {
+    background: url("../img/facebook.png") no-repeat;
+    content: "";
+    display: block;
+    float: left;
+    height: 39px;
+    margin: 2px 8px 0 0;
+    width: 39px;
+}
+.facebook a:after {
+    content: "\203a";
+    font-family: 'helveticaneuecyrmedium', Tahoma, sans serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.middleword {
+    font-weight: normal;
+}
+.spanchekbox {
+    color: rgb(201, 201, 201);
+}
+.formspace p {
+    color: rgb(167, 162, 142);
+    font-size: 10px;
+    padding-top: 20px;
+}
+.submit {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#65abe4+0,61b9e3+3,51b0dc+6,388acb+59,307ec6+79,2e7ac4+94,3382c8+97,4196d2+100 */
+    
+    background: rgb(101, 171, 228);
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(top, rgba(101, 171, 228, 1) 0%, rgba(97, 185, 227, 1) 3%, rgba(81, 176, 220, 1) 6%, rgba(56, 138, 203, 1) 59%, rgba(48, 126, 198, 1) 79%, rgba(46, 122, 196, 1) 94%, rgba(51, 130, 200, 1) 97%, rgba(65, 150, 210, 1) 100%);
+    /* FF3.6-15 */
+    
+    background: -webkit-linear-gradient(top, rgba(101, 171, 228, 1) 0%, rgba(97, 185, 227, 1) 3%, rgba(81, 176, 220, 1) 6%, rgba(56, 138, 203, 1) 59%, rgba(48, 126, 198, 1) 79%, rgba(46, 122, 196, 1) 94%, rgba(51, 130, 200, 1) 97%, rgba(65, 150, 210, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    
+    background: linear-gradient(to bottom, rgba(101, 171, 228, 1) 0%, rgba(97, 185, 227, 1) 3%, rgba(81, 176, 220, 1) 6%, rgba(56, 138, 203, 1) 59%, rgba(48, 126, 198, 1) 79%, rgba(46, 122, 196, 1) 94%, rgba(51, 130, 200, 1) 97%, rgba(65, 150, 210, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#65abe4', endColorstr='#4196d2', GradientType=0);
+    /* IE6-9 */
+    
+    font-family: 'helveticaneuecyrmedium', Tahoma, sans-serif;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+}

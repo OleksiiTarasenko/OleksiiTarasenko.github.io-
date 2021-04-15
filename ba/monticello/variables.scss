@@ -1,0 +1,21 @@
+$colorBlue: #5474fd;
+$colorDarkBlue: #496bfe;
+$colorBG: #232323;
+$contentBG: rgba($color: #232323, $alpha: .9);
+
+%bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+%sect {
+  @extend %bg;
+  height: 100vh;
+  display: flex;
+
+  @media screen and (max-width:639px) {
+    min-width: 320px;
+
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 105" width="350" height="105">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #444} 
+	</style>
+	<g id="How It Works">
+		<g id="Search">
+			<path id="Rectangle 6" class="shp0" d="M0 0L350 0L350 105L0 105L0 0Z" />
+		</g>
+	</g>
+</svg>
